@@ -55,6 +55,14 @@
 		D4D2DEFB1306C95700F9A62A /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = D4D2DEF61306C95700F9A62A /* FMDatabase.m */; };
 		D4D2DEFC1306C95700F9A62A /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = D4D2DEF81306C95700F9A62A /* FMDatabaseAdditions.m */; };
 		D4D2DEFD1306C95700F9A62A /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = D4D2DEFA1306C95700F9A62A /* FMResultSet.m */; };
+		D4D2DF271306D1B900F9A62A /* TownViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4D2DF251306D1B900F9A62A /* TownViewController.m */; };
+		D4D2DF281306D1B900F9A62A /* TownViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D4D2DF261306D1B900F9A62A /* TownViewController.xib */; };
+		D4D2DF391306D40F00F9A62A /* TownCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D4D2DF381306D40F00F9A62A /* TownCell.m */; };
+		D4D2DF501306D54700F9A62A /* MVYImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = D4D2DF4D1306D54700F9A62A /* MVYImageView.m */; };
+		D4D2DF511306D54700F9A62A /* UIImageExtras.m in Sources */ = {isa = PBXBuildFile; fileRef = D4D2DF4F1306D54700F9A62A /* UIImageExtras.m */; };
+		D4D2DF631306D74400F9A62A /* TownCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D4D2DF621306D74400F9A62A /* TownCell.xib */; };
+		D4D2DFCB1306DAA200F9A62A /* house.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D4D2DFCA1306DAA200F9A62A /* house.jpg */; };
+		D4D2E0431306E01B00F9A62A /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4D2E0421306E01B00F9A62A /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -144,6 +152,18 @@
 		D4D2DEF81306C95700F9A62A /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
 		D4D2DEF91306C95700F9A62A /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
 		D4D2DEFA1306C95700F9A62A /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		D4D2DF241306D1B900F9A62A /* TownViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TownViewController.h; sourceTree = "<group>"; };
+		D4D2DF251306D1B900F9A62A /* TownViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TownViewController.m; sourceTree = "<group>"; };
+		D4D2DF261306D1B900F9A62A /* TownViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TownViewController.xib; sourceTree = "<group>"; };
+		D4D2DF371306D40F00F9A62A /* TownCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TownCell.h; sourceTree = "<group>"; };
+		D4D2DF381306D40F00F9A62A /* TownCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TownCell.m; sourceTree = "<group>"; };
+		D4D2DF4C1306D54700F9A62A /* MVYImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVYImageView.h; sourceTree = "<group>"; };
+		D4D2DF4D1306D54700F9A62A /* MVYImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVYImageView.m; sourceTree = "<group>"; };
+		D4D2DF4E1306D54700F9A62A /* UIImageExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIImageExtras.h; sourceTree = "<group>"; };
+		D4D2DF4F1306D54700F9A62A /* UIImageExtras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIImageExtras.m; sourceTree = "<group>"; };
+		D4D2DF621306D74400F9A62A /* TownCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TownCell.xib; sourceTree = "<group>"; };
+		D4D2DFCA1306DAA200F9A62A /* house.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = house.jpg; sourceTree = "<group>"; };
+		D4D2E0421306E01B00F9A62A /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,6 +179,7 @@
 				D4D2DCAB1306A42700F9A62A /* MobileCoreServices.framework in Frameworks */,
 				D4D2DCAF1306A46F00F9A62A /* libz.1.2.3.dylib in Frameworks */,
 				D4D2DEEE1306C8FF00F9A62A /* libsqlite3.dylib in Frameworks */,
+				D4D2E0431306E01B00F9A62A /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,6 +246,7 @@
 				D4D2DCAA1306A42700F9A62A /* MobileCoreServices.framework */,
 				D4D2DCAE1306A46F00F9A62A /* libz.1.2.3.dylib */,
 				D4D2DEED1306C8FF00F9A62A /* libsqlite3.dylib */,
+				D4D2E0421306E01B00F9A62A /* QuartzCore.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -234,6 +256,7 @@
 			children = (
 				D4D2DC801306A3FD00F9A62A /* ASIHTTPRequest */,
 				D4D2DEF41306C95700F9A62A /* FMDatabase */,
+				D4D2DF4B1306D54700F9A62A /* MVYImageView */,
 				D4D2DD7A1306B31600F9A62A /* NSUserDefaultsManager */,
 				D4D2DCC01306A50D00F9A62A /* SBJSON */,
 			);
@@ -342,6 +365,12 @@
 				D4D2DD941306B5B100F9A62A /* MySalaryViewController.h */,
 				D4D2DD951306B5B100F9A62A /* MySalaryViewController.m */,
 				D4D2DD961306B5B100F9A62A /* MySalaryViewController.xib */,
+				D4D2DF241306D1B900F9A62A /* TownViewController.h */,
+				D4D2DF251306D1B900F9A62A /* TownViewController.m */,
+				D4D2DF261306D1B900F9A62A /* TownViewController.xib */,
+				D4D2DF371306D40F00F9A62A /* TownCell.h */,
+				D4D2DF381306D40F00F9A62A /* TownCell.m */,
+				D4D2DF621306D74400F9A62A /* TownCell.xib */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -351,6 +380,7 @@
 			children = (
 				D4D2DE461306C63300F9A62A /* Common */,
 				D4D2DD0E1306A9EA00F9A62A /* SexSelector */,
+				D4D2DFC91306DAA200F9A62A /* Towns */,
 			);
 			path = img;
 			sourceTree = "<group>";
@@ -392,6 +422,25 @@
 				D4D2DEFA1306C95700F9A62A /* FMResultSet.m */,
 			);
 			path = FMDatabase;
+			sourceTree = "<group>";
+		};
+		D4D2DF4B1306D54700F9A62A /* MVYImageView */ = {
+			isa = PBXGroup;
+			children = (
+				D4D2DF4C1306D54700F9A62A /* MVYImageView.h */,
+				D4D2DF4D1306D54700F9A62A /* MVYImageView.m */,
+				D4D2DF4E1306D54700F9A62A /* UIImageExtras.h */,
+				D4D2DF4F1306D54700F9A62A /* UIImageExtras.m */,
+			);
+			path = MVYImageView;
+			sourceTree = "<group>";
+		};
+		D4D2DFC91306DAA200F9A62A /* Towns */ = {
+			isa = PBXGroup;
+			children = (
+				D4D2DFCA1306DAA200F9A62A /* house.jpg */,
+			);
+			path = Towns;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -454,6 +503,9 @@
 				D4D2DD981306B5B100F9A62A /* MySalaryViewController.xib in Resources */,
 				D4D2DE091306BC8000F9A62A /* MySexSelectorViewController.xib in Resources */,
 				D4D2DE481306C64700F9A62A /* black_vinyl_fs.jpg in Resources */,
+				D4D2DF281306D1B900F9A62A /* TownViewController.xib in Resources */,
+				D4D2DF631306D74400F9A62A /* TownCell.xib in Resources */,
+				D4D2DFCB1306DAA200F9A62A /* house.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -494,6 +546,10 @@
 				D4D2DEFB1306C95700F9A62A /* FMDatabase.m in Sources */,
 				D4D2DEFC1306C95700F9A62A /* FMDatabaseAdditions.m in Sources */,
 				D4D2DEFD1306C95700F9A62A /* FMResultSet.m in Sources */,
+				D4D2DF271306D1B900F9A62A /* TownViewController.m in Sources */,
+				D4D2DF391306D40F00F9A62A /* TownCell.m in Sources */,
+				D4D2DF501306D54700F9A62A /* MVYImageView.m in Sources */,
+				D4D2DF511306D54700F9A62A /* UIImageExtras.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
