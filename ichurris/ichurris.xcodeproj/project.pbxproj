@@ -58,11 +58,12 @@
 		D4D2DF271306D1B900F9A62A /* TownViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4D2DF251306D1B900F9A62A /* TownViewController.m */; };
 		D4D2DF281306D1B900F9A62A /* TownViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D4D2DF261306D1B900F9A62A /* TownViewController.xib */; };
 		D4D2DF391306D40F00F9A62A /* TownCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D4D2DF381306D40F00F9A62A /* TownCell.m */; };
-		D4D2DF501306D54700F9A62A /* MVYImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = D4D2DF4D1306D54700F9A62A /* MVYImageView.m */; };
-		D4D2DF511306D54700F9A62A /* UIImageExtras.m in Sources */ = {isa = PBXBuildFile; fileRef = D4D2DF4F1306D54700F9A62A /* UIImageExtras.m */; };
 		D4D2DF631306D74400F9A62A /* TownCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D4D2DF621306D74400F9A62A /* TownCell.xib */; };
 		D4D2DFCB1306DAA200F9A62A /* house.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D4D2DFCA1306DAA200F9A62A /* house.jpg */; };
 		D4D2E0431306E01B00F9A62A /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4D2E0421306E01B00F9A62A /* QuartzCore.framework */; };
+		D4D2E08E1306E28000F9A62A /* ResultsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4D2E08C1306E28000F9A62A /* ResultsViewController.m */; };
+		D4D2E08F1306E28000F9A62A /* ResultsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D4D2E08D1306E28000F9A62A /* ResultsViewController.xib */; };
+		D4D2E0C41306E59700F9A62A /* Town.m in Sources */ = {isa = PBXBuildFile; fileRef = D4D2E0C31306E59700F9A62A /* Town.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -157,13 +158,14 @@
 		D4D2DF261306D1B900F9A62A /* TownViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TownViewController.xib; sourceTree = "<group>"; };
 		D4D2DF371306D40F00F9A62A /* TownCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TownCell.h; sourceTree = "<group>"; };
 		D4D2DF381306D40F00F9A62A /* TownCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TownCell.m; sourceTree = "<group>"; };
-		D4D2DF4C1306D54700F9A62A /* MVYImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVYImageView.h; sourceTree = "<group>"; };
-		D4D2DF4D1306D54700F9A62A /* MVYImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVYImageView.m; sourceTree = "<group>"; };
-		D4D2DF4E1306D54700F9A62A /* UIImageExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIImageExtras.h; sourceTree = "<group>"; };
-		D4D2DF4F1306D54700F9A62A /* UIImageExtras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIImageExtras.m; sourceTree = "<group>"; };
 		D4D2DF621306D74400F9A62A /* TownCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TownCell.xib; sourceTree = "<group>"; };
 		D4D2DFCA1306DAA200F9A62A /* house.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = house.jpg; sourceTree = "<group>"; };
 		D4D2E0421306E01B00F9A62A /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		D4D2E08B1306E28000F9A62A /* ResultsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResultsViewController.h; sourceTree = "<group>"; };
+		D4D2E08C1306E28000F9A62A /* ResultsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResultsViewController.m; sourceTree = "<group>"; };
+		D4D2E08D1306E28000F9A62A /* ResultsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ResultsViewController.xib; sourceTree = "<group>"; };
+		D4D2E0C21306E59700F9A62A /* Town.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Town.h; sourceTree = "<group>"; };
+		D4D2E0C31306E59700F9A62A /* Town.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Town.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -190,6 +192,7 @@
 			isa = PBXGroup;
 			children = (
 				D4D2DCDD1306A67200F9A62A /* App */,
+				D4D2E0C11306E58300F9A62A /* Model */,
 				D4D2DCE01306A67200F9A62A /* ViewControllers */,
 			);
 			path = Classes;
@@ -256,7 +259,6 @@
 			children = (
 				D4D2DC801306A3FD00F9A62A /* ASIHTTPRequest */,
 				D4D2DEF41306C95700F9A62A /* FMDatabase */,
-				D4D2DF4B1306D54700F9A62A /* MVYImageView */,
 				D4D2DD7A1306B31600F9A62A /* NSUserDefaultsManager */,
 				D4D2DCC01306A50D00F9A62A /* SBJSON */,
 			);
@@ -371,6 +373,9 @@
 				D4D2DF371306D40F00F9A62A /* TownCell.h */,
 				D4D2DF381306D40F00F9A62A /* TownCell.m */,
 				D4D2DF621306D74400F9A62A /* TownCell.xib */,
+				D4D2E08B1306E28000F9A62A /* ResultsViewController.h */,
+				D4D2E08C1306E28000F9A62A /* ResultsViewController.m */,
+				D4D2E08D1306E28000F9A62A /* ResultsViewController.xib */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -424,23 +429,21 @@
 			path = FMDatabase;
 			sourceTree = "<group>";
 		};
-		D4D2DF4B1306D54700F9A62A /* MVYImageView */ = {
-			isa = PBXGroup;
-			children = (
-				D4D2DF4C1306D54700F9A62A /* MVYImageView.h */,
-				D4D2DF4D1306D54700F9A62A /* MVYImageView.m */,
-				D4D2DF4E1306D54700F9A62A /* UIImageExtras.h */,
-				D4D2DF4F1306D54700F9A62A /* UIImageExtras.m */,
-			);
-			path = MVYImageView;
-			sourceTree = "<group>";
-		};
 		D4D2DFC91306DAA200F9A62A /* Towns */ = {
 			isa = PBXGroup;
 			children = (
 				D4D2DFCA1306DAA200F9A62A /* house.jpg */,
 			);
 			path = Towns;
+			sourceTree = "<group>";
+		};
+		D4D2E0C11306E58300F9A62A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D4D2E0C21306E59700F9A62A /* Town.h */,
+				D4D2E0C31306E59700F9A62A /* Town.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -506,6 +509,7 @@
 				D4D2DF281306D1B900F9A62A /* TownViewController.xib in Resources */,
 				D4D2DF631306D74400F9A62A /* TownCell.xib in Resources */,
 				D4D2DFCB1306DAA200F9A62A /* house.jpg in Resources */,
+				D4D2E08F1306E28000F9A62A /* ResultsViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -548,8 +552,8 @@
 				D4D2DEFD1306C95700F9A62A /* FMResultSet.m in Sources */,
 				D4D2DF271306D1B900F9A62A /* TownViewController.m in Sources */,
 				D4D2DF391306D40F00F9A62A /* TownCell.m in Sources */,
-				D4D2DF501306D54700F9A62A /* MVYImageView.m in Sources */,
-				D4D2DF511306D54700F9A62A /* UIImageExtras.m in Sources */,
+				D4D2E08E1306E28000F9A62A /* ResultsViewController.m in Sources */,
+				D4D2E0C41306E59700F9A62A /* Town.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

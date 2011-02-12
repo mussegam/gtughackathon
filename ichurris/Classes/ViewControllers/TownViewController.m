@@ -8,10 +8,10 @@
 
 #import "ASIHTTPRequest.h"
 #import "Defines.h"
-#import "MVYImageView.h"
 #import "TownCell.h"
 #import "TownViewController.h"
 #import <QuartzCore/QuartzCore.h>
+#import "ResultsViewController.h"
 
 
 @implementation TownViewController
@@ -32,6 +32,7 @@
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
     [super viewDidLoad];
+	[self.navigationItem setTitle:@"¿Para que municipio?"];
 	towns = [[NSMutableArray alloc] init];
 	[towns addObject:@"a"];
 	[towns addObject:@"b"];
@@ -69,6 +70,12 @@
 
 #pragma mark UITableViewDelegate
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+	ResultsViewController *rvc = [[ResultsViewController alloc] initWithNibName:@"ResultsViewController" bundle:nil];
+	[[self navigationController] pushViewController:rvc animated:YES];
+	[rvc release];
+}
+
 #pragma mark UITableViewDataSource
 
 - (NSInteger)tableView:(UITableView *)aTableView numberOfRowsInSection:(NSInteger)section {
@@ -93,8 +100,6 @@
     
 	// Cell setup...
     NSURL *url = [NSURL URLWithString:@"http://www.google.es/images/nav_logo36.png"];
-	
-	UIImageView *thumbnailImage;
 	
 	__block ASIHTTPRequest *request = [[ASIHTTPRequest alloc] initWithURL:url];
 	[request setDelegate:self];

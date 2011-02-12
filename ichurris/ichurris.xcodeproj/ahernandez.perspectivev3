@@ -268,7 +268,6 @@
 							<array>
 								<string>29B97314FDCFA39411CA2CEA</string>
 								<string>D4D2DC7F1306A3FD00F9A62A</string>
-								<string>D4D2DF4B1306D54700F9A62A</string>
 								<string>080E96DDFE201D6D7F000001</string>
 								<string>D4D2DCE01306A67200F9A62A</string>
 								<string>29B97315FDCFA39411CA2CEA</string>
@@ -282,14 +281,14 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>36</integer>
-									<integer>13</integer>
-									<integer>11</integer>
+									<integer>34</integer>
+									<integer>8</integer>
+									<integer>6</integer>
 									<integer>0</integer>
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
-							<string>{{0, 413}, {345, 692}}</string>
+							<string>{{0, 14}, {345, 692}}</string>
 						</dict>
 						<key>PBXTopSmartGroupGIDs</key>
 						<array/>
@@ -324,7 +323,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>D4D2DC761306A30100F9A62A</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>TownCell.m</string>
+								<string>ResultsViewController.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -332,11 +331,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>D4D2DC771306A30100F9A62A</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>TownCell.m</string>
+										<string>ResultsViewController.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>D4D2E0841306E1B300F9A62A</string>
+										<string>D4D2E0BE1306E52A00F9A62A</string>
 										<key>history</key>
 										<array>
 											<string>D4D2DD041306A7E800F9A62A</string>
@@ -356,22 +355,24 @@
 											<string>D4D2DEF11306C90F00F9A62A</string>
 											<string>D4D2DF6E1306D88500F9A62A</string>
 											<string>D4D2DF6F1306D88500F9A62A</string>
-											<string>D4D2DF701306D88500F9A62A</string>
 											<string>D4D2DF761306D88500F9A62A</string>
 											<string>D4D2DF771306D88500F9A62A</string>
 											<string>D4D2DF7D1306D88500F9A62A</string>
-											<string>D4D2DF861306D8E200F9A62A</string>
 											<string>D4D2DF871306D8E200F9A62A</string>
 											<string>D4D2DFD01306DABA00F9A62A</string>
 											<string>D4D2DFD11306DABA00F9A62A</string>
 											<string>D4D2DFE51306DBA300F9A62A</string>
 											<string>D4D2DFEF1306DC3F00F9A62A</string>
 											<string>D4D2DFF01306DC3F00F9A62A</string>
-											<string>D4D2E0381306DFEE00F9A62A</string>
-											<string>D4D2E03A1306DFEE00F9A62A</string>
 											<string>D4D2E0571306E08900F9A62A</string>
-											<string>D4D2E0821306E1B300F9A62A</string>
-											<string>D4D2E0831306E1B300F9A62A</string>
+											<string>D4D2E0A61306E47300F9A62A</string>
+											<string>D4D2E0A81306E47300F9A62A</string>
+											<string>D4D2E0AD1306E4B700F9A62A</string>
+											<string>D4D2E0AE1306E4B700F9A62A</string>
+											<string>D4D2E0B01306E4B700F9A62A</string>
+											<string>D4D2E0B81306E52700F9A62A</string>
+											<string>D4D2E0B91306E52700F9A62A</string>
+											<string>D4D2E0BA1306E52700F9A62A</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -411,8 +412,6 @@
 									<dict>
 										<key>Frame</key>
 										<string>{{10, 27}, {1073, 223}}</string>
-										<key>RubberWindowFrame</key>
-										<string>0 127 1440 751 0 0 1440 878 </string>
 									</dict>
 									<key>Module</key>
 									<string>XCDetailModule</string>
@@ -466,7 +465,9 @@
 									<key>GeometryConfiguration</key>
 									<dict>
 										<key>Frame</key>
-										<string>{{10, 27}, {1073, 216}}</string>
+										<string>{{10, 27}, {1073, 223}}</string>
+										<key>RubberWindowFrame</key>
+										<string>0 127 1440 751 0 0 1440 878 </string>
 									</dict>
 									<key>Module</key>
 									<string>PBXBuildResultsModule</string>
