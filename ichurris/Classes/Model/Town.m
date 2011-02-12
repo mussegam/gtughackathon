@@ -200,8 +200,10 @@
 	
 	float results = salaryPoints*agePoints;
 
-	if (mySex == desiredSex) results =- 10;	// Homesexuality penalty
-	results -= [desiredAge intValue] - [myAge intValue] / 2;	// Asaltacunas bonus/malus
+	if (mySex == desiredSex) results =- 10;	// Homesexuality moustache penalty
+	results -= ([myAge intValue] - [desiredAge intValue]) / 2;	// Asaltacunas bonus/malus
+	
+	if (results<10) results = 10;
 	
 	return (NSUInteger)results;
 }

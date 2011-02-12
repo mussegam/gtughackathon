@@ -121,7 +121,7 @@
         }];
         [request startAsynchronous];
         
-        Town *town = [towns objectAtIndex:indexPath.row];
+        Town *town = [towns objectAtIndex:indexPath.row-1];
         
         cell.townName.text = town.name;
     }
