@@ -29,7 +29,8 @@
 		female0a14 = 0;
 		female15a64 = 0;
 		female65a84 = 0;
-		female85 = 0;	
+		female85 = 0;
+        distance = 100;
 	}
 	return self;
 }
@@ -42,7 +43,7 @@
 }
 
 - (NSString *)description {
-    return [NSString stringWithFormat:@"Name:%@ Lat:%f Lon:%f Males:%d Females:%d",self.name, self.lat, self.lon, [self getTotalMale], [self getTotalFemale]];
+    return [NSString stringWithFormat:@"Name:%@ Lat:%f Lon:%f Males:%d Females:%d Distance:%f",self.name, self.lat, self.lon, [self getTotalMale], [self getTotalFemale], self.distance];
 }
 
 #pragma mark -
@@ -95,6 +96,8 @@
 		town.female65a84 = [rs intForColumnIndex:9];
 		town.female85 = [rs intForColumnIndex:10];
         
+        town.distance = [location distanceFromLocation:[[CLLocation alloc] initWithLatitude:town.lat longitude:town.lon]];
+        
         [results addObject:town];
         [town release];
     }
@@ -102,6 +105,14 @@
     [db close];
     
     NSArray *outArray = [NSArray arrayWithArray:results];
+    
+    NSSortDescriptor *sortDescriptor;
+    sortDescriptor = [[[NSSortDescriptor alloc] initWithKey:@"distance" ascending:YES] autorelease];
+    
+    NSArray *sortDescriptors = [NSArray arrayWithObject:sortDescriptor];
+    
+    outArray = [outArray sortedArrayUsingDescriptors:sortDescriptors];
+    
     [results release];
     return outArray;
 }

@@ -15,5 +15,6 @@
 }
 
 @property (nonatomic, retain) IBOutlet UITableView *myTableView;
+@property (nonatomic, retain) NSMutableArray *towns;
 
 @end

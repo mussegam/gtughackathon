@@ -27,7 +27,7 @@
 @property (nonatomic, retain) NSString *name;
 @property (nonatomic, assign) double lat;
 @property (nonatomic, assign) double lon;
-@property (nonatomic, assign, getter=getDistanceTo) double distance;
+@property (nonatomic, assign) double distance;
 @property (nonatomic, assign) NSUInteger male0a14;
 @property (nonatomic, assign) NSUInteger male15a64;
 @property (nonatomic, assign) NSUInteger male65a84;
