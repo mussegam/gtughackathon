@@ -53,13 +53,44 @@ def fetch_towns_of_catalonia
         
         file = open(query)
         town_dict = JSON.parse(file.read)['feed']
-        entries = town_dict['opensearch:totalResults']
+        entries = town_dict['opensearch:totalResults'].to_i
+        
+        if (entries == 0) then
+          
+          new_name = ""
+          
+          if (name.include?("(")) then
+            name = name.partition("(").first.rstrip
+            puts "Name without () => #{name}"
+            new_name = name
+          end
+          
+          if (name == "L'Hospitalet de Llobregat") then
+            new_name = "Hospitalet de Llobregat"
+          else            
+            tokens = name.split
+            if (tokens.size > 1) then
+              new_name = tokens[1..-1].join(" ")
+            elsif (name.include?("'"))
+              new_name = name.rpartition("'").last
+            end
+          end
+          
+          query = api_url + new_name + options
+          query = URI.escape(query)
+          puts "New query #{query}"
+          file = open(query)
+          town_dict = JSON.parse(file.read)['feed']
+        end
         
         entry = town_dict['entry']
         entry = entry.first if (entry.class.to_s == "Array") 
         
+        puts entry['title']
         content = entry['link']
-        puts content
+        href = content["href"]
+        start = href.rindex("=") + 1
+        town_id = href[start..-1]
       end
     end
   end
