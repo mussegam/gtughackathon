@@ -24,7 +24,7 @@
 	[mapaView setRegion:MKCoordinateRegionMakeWithDistance([dele bestLocation].coordinate, 25000, 25000)];
     
     for (Town *town in towns) {
-        MKCircle *circle = [MKCircle circleWithCenterCoordinate:CLLocationCoordinate2DMake(town.lat, town.lon) radius:[town getGetCachoProbability]+10];
+        MKCircle *circle = [MKCircle circleWithCenterCoordinate:CLLocationCoordinate2DMake(town.lat, town.lon) radius:([town getGetCachoProbability]+10)*100];
         [mapaView addOverlay:circle];
     }
 }
@@ -57,5 +57,11 @@
     [super dealloc];
 }
 
+- (MKOverlayView *)mapView:(MKMapView *)mapView viewForOverlay:(id <MKOverlay>)overlay{
+    MKCircleView *circleView = [[[MKCircleView alloc] initWithCircle:overlay] autorelease];
+    circleView.lineWidth = 1.0;
+    circleView.strokeColor = [UIColor redColor];
+    return circleView;
+}
 
 @end
