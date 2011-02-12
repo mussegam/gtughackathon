@@ -5,16 +5,14 @@ require 'mechanize'
 require 'uri'
 require 'open-uri'
 require 'json'
+require 'sqlite3'
 
 class Town
 
-	attr_accessor	:name, :lat, :lon
+	attr_accessor	:name, :lat, :lon, :home0, :home1, :home2, :home3, :home4, :dona0, :dona1, :dona2, :dona3, :dona4
 	
-	def initialize(name,lat,lon)
-		@name = name
-		@lat = lat
-		@lon = lon
-	end
+	def initialize()
+  end
 	
 	def to_s
 	  "#{@name} Lat:#{@lat} -- Lon:#{@lon}"
@@ -61,7 +59,6 @@ def fetch_towns_of_catalonia
           
           if (name.include?("(")) then
             name = name.partition("(").first.rstrip
-            puts "Name without () => #{name}"
             new_name = name
           end
           
@@ -86,11 +83,51 @@ def fetch_towns_of_catalonia
         entry = town_dict['entry']
         entry = entry.first if (entry.class.to_s == "Array") 
         
-        puts entry['title']
         content = entry['link']
         href = content["href"]
         start = href.rindex("=") + 1
         town_id = href[start..-1]
+        
+        data_url = "http://api.idescat.cat/emex/v1/dades.json?id=" + town_id + "&i=f328,f329,f176,f33,f34,f35,f36,f38,f39,f40,f41,f42"
+        puts data_url
+        data_file = open(data_url)
+        town_data = JSON.parse(data_file.read)
+        
+        town = Town.new
+        town_data["fitxes"]["indicadors"]["i"].each do |elem|
+          town.name = name
+          
+          id = elem["id"]
+          value = elem["v"].split(',').first
+          
+          if (id == "f328") then
+            town.lon = value
+          elsif (id == "f329")
+            town.lat = value
+          elsif (id == "f176")
+            town.home0 = value
+          elsif (id == "f33")
+            town.home1 = value
+          elsif (id == "f34")
+            town.home2 = value
+          elsif (id == "f35")
+            town.home3 = value
+          elsif (id == "f36")
+            town.home4 = value
+          elsif (id == "f38")
+            town.dona0 = value
+          elsif (id == "f39")
+            town.dona1 = value
+          elsif (id == "f40")
+            town.dona2 = value
+          elsif (id == "f41")
+            town.dona3 = value
+          elsif (id == "f42")
+            town.dona4 = value
+          end
+        end
+        puts "#{town}"
+        towns.insert(-1,town)
       end
     end
   end
