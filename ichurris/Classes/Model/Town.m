@@ -55,6 +55,10 @@
 	return 0;
 }
 
+- (NSUInteger)getTotal {
+	return [self getTotalMale]+[self getTotalFemale];
+}
+
 - (NSUInteger)getTotalMale {
 	return male0a14 + male15a64 + male65a84 + male85;
 }
@@ -191,7 +195,8 @@
 	NSUInteger ageIdx = [ages indexOfObject:myAge];
 	NSNumber *numberPeople = [agesMapAmount objectAtIndex:ageIdx];
 	
-	float agePoints = ((float)[numberPeople intValue]*10)/total;
+	NSUInteger ntotal = [self getTotal];
+	float agePoints = ((float)[numberPeople intValue]*10)/ntotal;
 	
 	float results = salaryPoints*agePoints;
 

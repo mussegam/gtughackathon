@@ -40,6 +40,7 @@
 @property (nonatomic, assign) NSUInteger total;
 
 - (double)getDistanceFrom:(CLLocation*)aCoord;
+- (NSUInteger)getTotal;
 - (NSUInteger)getTotalMale;
 - (NSUInteger)getTotalFemale;
 - (NSUInteger)getGetCachoProbability;

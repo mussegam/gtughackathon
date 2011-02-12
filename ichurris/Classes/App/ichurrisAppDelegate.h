@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MyCLController.h"
 
-@interface ichurrisAppDelegate : NSObject <UIApplicationDelegate> {
+@interface ichurrisAppDelegate : NSObject <UIApplicationDelegate, LocationDataProtocol> {
     
     UIWindow *window;
     UINavigationController *navigationController;

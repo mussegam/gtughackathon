@@ -71,8 +71,9 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
 	ResultsViewController *rvc = [[ResultsViewController alloc] initWithNibName:@"ResultsViewController" bundle:nil];
 	Town *town = (Town*)[towns objectAtIndex:indexPath.row];
-	rvc.resultLabel.text = [NSString stringWithFormat:@"%d",[town getGetCachoProbability]];
+	NSUInteger kk = [town getGetCachoProbability];
 	[[self navigationController] pushViewController:rvc animated:YES];
+	rvc.resultLabel.text = [NSString stringWithFormat:@"%d/100",[town getGetCachoProbability]];
 	[rvc release];
 }
 

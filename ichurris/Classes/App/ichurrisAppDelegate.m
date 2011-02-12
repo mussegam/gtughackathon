@@ -10,7 +10,7 @@
 #import "SexSelectorViewController.h"
 #import "Town.h"
 #import "Defines.h"
-#import "MyCLController.h"
+
 
 @implementation ichurrisAppDelegate
 
