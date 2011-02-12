@@ -9,12 +9,14 @@
 #import "ichurrisAppDelegate.h"
 #import "SexSelectorViewController.h"
 #import "Town.h"
+#import "Defines.h"
+#import "MyCLController.h"
 
 @implementation ichurrisAppDelegate
 
 @synthesize window;
 @synthesize navigationController;
-
+@synthesize nearTowns;
 
 #pragma mark -
 #pragma mark Application lifecycle
@@ -26,7 +28,7 @@
     // Add the navigation controller's view to the window and display.
     [self.window addSubview:navigationController.view];
     [self.window makeKeyAndVisible];
-    [Town fetchNearTowns];
+    [[MyCLController sharedInstance] startUpdates:kCLLocationAccuracyBest distanceFilter:100 timeout:30 delegado:self];
 
     return YES;
 }
@@ -86,6 +88,22 @@
 	[super dealloc];
 }
 
+- (void) didFailUpdatingLocation {
+    DLog(@"Fail locating");
+}
+
+- (void) timeout:(CLLocation*)res {
+    DLog(@"Timeout!");
+}
+
+- (void) didFinishUpdatingLocation:(CLLocation*)res {
+    self.nearTowns = [Town fetchNearTowns];
+}
+
+- (void) didUpdateLocation:(CLLocation*)res {
+    self.nearTowns = [Town fetchNearTowns];
+}
+
+
 
 @end
-
