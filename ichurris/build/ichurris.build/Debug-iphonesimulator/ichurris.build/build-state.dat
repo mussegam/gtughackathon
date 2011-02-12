@@ -1,7 +1,7 @@
 Tichurris
 v7
 r0
-t319219005.108536
+t319220136.343799
 cCheck dependencies
 cProcessInfoPlistFile /Users/ahernandez/Desktop/hackathon/ichurris/gtughackathon/ichurris/build/Debug-iphonesimulator/ichurris.app/Info.plist ichurris-Info.plist
 cCompileXIB /Users/ahernandez/Desktop/hackathon/ichurris/gtughackathon/ichurris/MainWindow.xib
@@ -52,6 +52,7 @@ cCompileC build/ichurris.build/Debug-iphonesimulator/ichurris.build/Objects-norm
 cCompileC build/ichurris.build/Debug-iphonesimulator/ichurris.build/Objects-normal/i386/TownViewController.o /Users/ahernandez/Desktop/hackathon/ichurris/gtughackathon/ichurris/Classes/ViewControllers/TownViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
 cCompileC build/ichurris.build/Debug-iphonesimulator/ichurris.build/Objects-normal/i386/TownCell.o /Users/ahernandez/Desktop/hackathon/ichurris/gtughackathon/ichurris/Classes/ViewControllers/TownCell.m normal i386 objective-c com.apple.compilers.gcc.4_2
 cCompileC build/ichurris.build/Debug-iphonesimulator/ichurris.build/Objects-normal/i386/ResultsViewController.o /Users/ahernandez/Desktop/hackathon/ichurris/gtughackathon/ichurris/Classes/ViewControllers/ResultsViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/ichurris.build/Debug-iphonesimulator/ichurris.build/Objects-normal/i386/Town.o /Users/ahernandez/Desktop/hackathon/ichurris/gtughackathon/ichurris/Classes/Model/Town.m normal i386 objective-c com.apple.compilers.gcc.4_2
 cLd /Users/ahernandez/Desktop/hackathon/ichurris/gtughackathon/ichurris/build/Debug-iphonesimulator/ichurris.app/ichurris normal i386
 cGenerateDSYMFile /Users/ahernandez/Desktop/hackathon/ichurris/gtughackathon/ichurris/build/Debug-iphonesimulator/ichurris.app.dSYM /Users/ahernandez/Desktop/hackathon/ichurris/gtughackathon/ichurris/build/Debug-iphonesimulator/ichurris.app/ichurris
 cTouch /Users/ahernandez/Desktop/hackathon/ichurris/gtughackathon/ichurris/build/Debug-iphonesimulator/ichurris.app
@@ -218,6 +219,18 @@ t1297510503
 s2739
 i"ichurrisAppDelegate.h"
 i"SexSelectorViewController.h"
+
+N/Users/ahernandez/Desktop/hackathon/ichurris/gtughackathon/ichurris/Classes/Model/Town.h
+c000000004D56B227000000000000041E
+t1297527335
+s1054
+i<Foundation/Foundation.h>
+
+N/Users/ahernandez/Desktop/hackathon/ichurris/gtughackathon/ichurris/Classes/Model/Town.m
+c000000004D56B1E50000000000000370
+t1297527269
+s880
+i"Town.h"
 
 N/Users/ahernandez/Desktop/hackathon/ichurris/gtughackathon/ichurris/Classes/RootViewController.h
 c000000004D566B6700000000000000ED
@@ -464,11 +477,11 @@ t1297509223
 s17491
 
 N/Users/ahernandez/Desktop/hackathon/ichurris/gtughackathon/ichurris/build/Debug-iphonesimulator/ichurris.app
-t1297526205
+t1297527336
 s646
 
 N/Users/ahernandez/Desktop/hackathon/ichurris/gtughackathon/ichurris/build/Debug-iphonesimulator/ichurris.app.dSYM
-t1297526186
+t1297527336
 s102
 
 N/Users/ahernandez/Desktop/hackathon/ichurris/gtughackathon/ichurris/build/Debug-iphonesimulator/ichurris.app/AgeSelectorViewController.nib
@@ -544,8 +557,8 @@ t1297525226
 s1425
 
 N/Users/ahernandez/Desktop/hackathon/ichurris/gtughackathon/ichurris/build/Debug-iphonesimulator/ichurris.app/ichurris
-t1297526186
-s584452
+t1297527336
+s588240
 
 N/Users/ahernandez/Desktop/hackathon/ichurris/gtughackathon/ichurris/build/ichurris.build/Debug-iphonesimulator/ichurris.build/Objects-normal/i386/ASIAuthenticationDialog.o
 t1297525228
@@ -671,6 +684,10 @@ N/Users/ahernandez/Desktop/hackathon/ichurris/gtughackathon/ichurris/build/ichur
 t1297525229
 s47452
 
+N/Users/ahernandez/Desktop/hackathon/ichurris/gtughackathon/ichurris/build/ichurris.build/Debug-iphonesimulator/ichurris.build/Objects-normal/i386/Town.o
+t1297527336
+s19064
+
 N/Users/ahernandez/Desktop/hackathon/ichurris/gtughackathon/ichurris/build/ichurris.build/Debug-iphonesimulator/ichurris.build/Objects-normal/i386/TownCell.o
 t1297526002
 s40460
@@ -684,9 +701,9 @@ t1297525229
 s24044
 
 N/Users/ahernandez/Desktop/hackathon/ichurris/gtughackathon/ichurris/build/ichurris.build/Debug-iphonesimulator/ichurris.build/Objects-normal/i386/ichurris.LinkFileList
-c000000004D56AC66000000000000158A
-t1297525862
-s5514
+c000000004D56B0E10000000000001623
+t1297527009
+s5667
 
 N/Users/ahernandez/Desktop/hackathon/ichurris/gtughackathon/ichurris/build/ichurris.build/Debug-iphonesimulator/ichurris.build/Objects-normal/i386/ichurrisAppDelegate.o
 t1297525228
@@ -1119,7 +1136,7 @@ s909
 
 CCheck dependencies
 r0
-lSLF07#2@18"Check dependencies319219004#319219004#0(0"0(0#1#0"8641194112#0"0#
+lSLF07#2@18"Check dependencies319220136#319220136#0(0"0(0#1#0"8682384960#0"0#
 
 CCompileC build/ichurris.build/Debug-iphonesimulator/ichurris.build/Objects-normal/i386/ASIAuthenticationDialog.o /Users/ahernandez/Desktop/hackathon/ichurris/gtughackathon/ichurris/lib/ASIHTTPRequest/ASIAuthenticationDialog.m normal i386 objective-c com.apple.compilers.gcc.4_2
 s319218028.016084
@@ -1537,6 +1554,19 @@ xobjective-c
 xcom.apple.compilers.gcc.4_2
 lSLF07#2@127"Compile /Users/ahernandez/Desktop/hackathon/ichurris/gtughackathon/ichurris/Classes/ViewControllers/SexSelectorViewController.m319218028#319218029#0(0"0(0#0#119"/Users/ahernandez/Desktop/hackathon/ichurris/gtughackathon/ichurris/Classes/ViewControllers/SexSelectorViewController.m8669735360#2329"    cd /Users/ahernandez/Desktop/hackathon/ichurris/gtughackathon/ichurris    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/ahernandez/Desktop/hackathon/ichurris/gtughackathon/ichurris/build/ichurris.build/Debug-iphonesimulator/ichurris.build/ichurris-generated-files.hmap -I/Users/ahernandez/Desktop/hackathon/ichurris/gtughackathon/ichurris/build/ichurris.build/Debug-iphonesimulator/ichurris.build/ichurris-own-target-headers.hmap -I/Users/ahernandez/Desktop/hackathon/ichurris/gtughackathon/ichurris/build/ichurris.build/Debug-iphonesimulator/ichurris.build/ichurris-all-target-headers.hmap -iquote /Users/ahernandez/Desktop/hackathon/ichurris/gtughackathon/ichurris/build/ichurris.build/Debug-iphonesimulator/ichurris.build/ichurris-project-headers.hmap -F/Users/ahernandez/Desktop/hackathon/ichurris/gtughackathon/ichurris/build/Debug-iphonesimulator -I/Users/ahernandez/Desktop/hackathon/ichurris/gtughackathon/ichurris/build/Debug-iphonesimulator/include -I/Users/ahernandez/Desktop/hackathon/ichurris/gtughackathon/ichurris/build/ichurris.build/Debug-iphonesimulator/ichurris.build/DerivedSources/i386 -I/Users/ahernandez/Desktop/hackathon/ichurris/gtughackathon/ichurris/build/ichurris.build/Debug-iphonesimulator/ichurris.build/DerivedSources -DDEBUG=1 -include /var/folders/eL/eLuwaNwrExCXrDo2-fdCnE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ichurris_Prefix-eoyvtzlusvxlghdotkmoiwkurcvb/ichurris_Prefix.pch -c /Users/ahernandez/Desktop/hackathon/ichurris/gtughackathon/ichurris/Classes/ViewControllers/SexSelectorViewController.m -o /Users/ahernandez/Desktop/hackathon/ichurris/gtughackathon/ichurris/build/ichurris.build/Debug-iphonesimulator/ichurris.build/Objects-normal/i386/SexSelectorViewController.o0#
 
+CCompileC build/ichurris.build/Debug-iphonesimulator/ichurris.build/Objects-normal/i386/Town.o /Users/ahernandez/Desktop/hackathon/ichurris/gtughackathon/ichurris/Classes/Model/Town.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s319220136.079136
+e319220136.153486
+r1
+xCompileC
+xbuild/ichurris.build/Debug-iphonesimulator/ichurris.build/Objects-normal/i386/Town.o
+x/Users/ahernandez/Desktop/hackathon/ichurris/gtughackathon/ichurris/Classes/Model/Town.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@96"Compile /Users/ahernandez/Desktop/hackathon/ichurris/gtughackathon/ichurris/Classes/Model/Town.m319220136#319220136#0(0"0(0#0#88"/Users/ahernandez/Desktop/hackathon/ichurris/gtughackathon/ichurris/Classes/Model/Town.m8661447840#2277"    cd /Users/ahernandez/Desktop/hackathon/ichurris/gtughackathon/ichurris    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/ahernandez/Desktop/hackathon/ichurris/gtughackathon/ichurris/build/ichurris.build/Debug-iphonesimulator/ichurris.build/ichurris-generated-files.hmap -I/Users/ahernandez/Desktop/hackathon/ichurris/gtughackathon/ichurris/build/ichurris.build/Debug-iphonesimulator/ichurris.build/ichurris-own-target-headers.hmap -I/Users/ahernandez/Desktop/hackathon/ichurris/gtughackathon/ichurris/build/ichurris.build/Debug-iphonesimulator/ichurris.build/ichurris-all-target-headers.hmap -iquote /Users/ahernandez/Desktop/hackathon/ichurris/gtughackathon/ichurris/build/ichurris.build/Debug-iphonesimulator/ichurris.build/ichurris-project-headers.hmap -F/Users/ahernandez/Desktop/hackathon/ichurris/gtughackathon/ichurris/build/Debug-iphonesimulator -I/Users/ahernandez/Desktop/hackathon/ichurris/gtughackathon/ichurris/build/Debug-iphonesimulator/include -I/Users/ahernandez/Desktop/hackathon/ichurris/gtughackathon/ichurris/build/ichurris.build/Debug-iphonesimulator/ichurris.build/DerivedSources/i386 -I/Users/ahernandez/Desktop/hackathon/ichurris/gtughackathon/ichurris/build/ichurris.build/Debug-iphonesimulator/ichurris.build/DerivedSources -DDEBUG=1 -include /var/folders/eL/eLuwaNwrExCXrDo2-fdCnE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ichurris_Prefix-eoyvtzlusvxlghdotkmoiwkurcvb/ichurris_Prefix.pch -c /Users/ahernandez/Desktop/hackathon/ichurris/gtughackathon/ichurris/Classes/Model/Town.m -o /Users/ahernandez/Desktop/hackathon/ichurris/gtughackathon/ichurris/build/ichurris.build/Debug-iphonesimulator/ichurris.build/Objects-normal/i386/Town.o0#
+
 CCompileC build/ichurris.build/Debug-iphonesimulator/ichurris.build/Objects-normal/i386/TownCell.o /Users/ahernandez/Desktop/hackathon/ichurris/gtughackathon/ichurris/Classes/ViewControllers/TownCell.m normal i386 objective-c com.apple.compilers.gcc.4_2
 s319218802.487925
 e319218802.580391
@@ -1760,23 +1790,23 @@ ximg/Towns/house.jpg
 lSLF07#2@24"Copy img/Towns/house.jpg319218026#319218026#0(0"0(0#0#87"/Users/ahernandez/Desktop/hackathon/ichurris/gtughackathon/ichurris/img/Towns/house.jpg8677562432#565"    cd /Users/ahernandez/Desktop/hackathon/ichurris/gtughackathon/ichurris    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/ahernandez/Desktop/hackathon/ichurris/gtughackathon/ichurris/img/Towns/house.jpg /Users/ahernandez/Desktop/hackathon/ichurris/gtughackathon/ichurris/build/Debug-iphonesimulator/ichurris.app0#
 
 CGenerateDSYMFile /Users/ahernandez/Desktop/hackathon/ichurris/gtughackathon/ichurris/build/Debug-iphonesimulator/ichurris.app.dSYM /Users/ahernandez/Desktop/hackathon/ichurris/gtughackathon/ichurris/build/Debug-iphonesimulator/ichurris.app/ichurris
-s319218986.082634
-e319218986.136958
+s319220136.269968
+e319220136.341056
 r1
 xGenerateDSYMFile
 x/Users/ahernandez/Desktop/hackathon/ichurris/gtughackathon/ichurris/build/Debug-iphonesimulator/ichurris.app.dSYM
 x/Users/ahernandez/Desktop/hackathon/ichurris/gtughackathon/ichurris/build/Debug-iphonesimulator/ichurris.app/ichurris
-lSLF07#2@112"GenerateDSYMFile build/Debug-iphonesimulator/ichurris.app.dSYM build/Debug-iphonesimulator/ichurris.app/ichurris319218986#319218986#0(0"0(0#0#117"/Users/ahernandez/Desktop/hackathon/ichurris/gtughackathon/ichurris/build/Debug-iphonesimulator/ichurris.app/ichurris8681247840#473"    cd /Users/ahernandez/Desktop/hackathon/ichurris/gtughackathon/ichurris    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil /Users/ahernandez/Desktop/hackathon/ichurris/gtughackathon/ichurris/build/Debug-iphonesimulator/ichurris.app/ichurris -o /Users/ahernandez/Desktop/hackathon/ichurris/gtughackathon/ichurris/build/Debug-iphonesimulator/ichurris.app.dSYM0#
+lSLF07#2@112"GenerateDSYMFile build/Debug-iphonesimulator/ichurris.app.dSYM build/Debug-iphonesimulator/ichurris.app/ichurris319220136#319220136#0(0"0(0#0#117"/Users/ahernandez/Desktop/hackathon/ichurris/gtughackathon/ichurris/build/Debug-iphonesimulator/ichurris.app/ichurris8670261344#473"    cd /Users/ahernandez/Desktop/hackathon/ichurris/gtughackathon/ichurris    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil /Users/ahernandez/Desktop/hackathon/ichurris/gtughackathon/ichurris/build/Debug-iphonesimulator/ichurris.app/ichurris -o /Users/ahernandez/Desktop/hackathon/ichurris/gtughackathon/ichurris/build/Debug-iphonesimulator/ichurris.app.dSYM0#
 
 CLd /Users/ahernandez/Desktop/hackathon/ichurris/gtughackathon/ichurris/build/Debug-iphonesimulator/ichurris.app/ichurris normal i386
-s319218985.996855
-e319218986.082499
+s319220136.153626
+e319220136.269839
 r1
 xLd
 x/Users/ahernandez/Desktop/hackathon/ichurris/gtughackathon/ichurris/build/Debug-iphonesimulator/ichurris.app/ichurris
 xnormal
 xi386
-lSLF07#2@122"Link /Users/ahernandez/Desktop/hackathon/ichurris/gtughackathon/ichurris/build/Debug-iphonesimulator/ichurris.app/ichurris319218985#319218986#0(0"0(0#0#0"8682551360#1174"    cd /Users/ahernandez/Desktop/hackathon/ichurris/gtughackathon/ichurris    setenv MACOSX_DEPLOYMENT_TARGET 10.6    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -arch i386 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -L/Users/ahernandez/Desktop/hackathon/ichurris/gtughackathon/ichurris/build/Debug-iphonesimulator -F/Users/ahernandez/Desktop/hackathon/ichurris/gtughackathon/ichurris/build/Debug-iphonesimulator -filelist /Users/ahernandez/Desktop/hackathon/ichurris/gtughackathon/ichurris/build/ichurris.build/Debug-iphonesimulator/ichurris.build/Objects-normal/i386/ichurris.LinkFileList -mmacosx-version-min=10.6 -Xlinker -objc_abi_version -Xlinker 2 -framework Foundation -framework UIKit -framework CoreGraphics -framework CFNetwork -framework SystemConfiguration -framework MobileCoreServices -lz.1.2.3 -lsqlite3 -framework QuartzCore -o /Users/ahernandez/Desktop/hackathon/ichurris/gtughackathon/ichurris/build/Debug-iphonesimulator/ichurris.app/ichurris0#
+lSLF07#2@122"Link /Users/ahernandez/Desktop/hackathon/ichurris/gtughackathon/ichurris/build/Debug-iphonesimulator/ichurris.app/ichurris319220136#319220136#0(0"0(0#0#0"8682910496#1174"    cd /Users/ahernandez/Desktop/hackathon/ichurris/gtughackathon/ichurris    setenv MACOSX_DEPLOYMENT_TARGET 10.6    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -arch i386 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -L/Users/ahernandez/Desktop/hackathon/ichurris/gtughackathon/ichurris/build/Debug-iphonesimulator -F/Users/ahernandez/Desktop/hackathon/ichurris/gtughackathon/ichurris/build/Debug-iphonesimulator -filelist /Users/ahernandez/Desktop/hackathon/ichurris/gtughackathon/ichurris/build/ichurris.build/Debug-iphonesimulator/ichurris.build/Objects-normal/i386/ichurris.LinkFileList -mmacosx-version-min=10.6 -Xlinker -objc_abi_version -Xlinker 2 -framework Foundation -framework UIKit -framework CoreGraphics -framework CFNetwork -framework SystemConfiguration -framework MobileCoreServices -lz.1.2.3 -lsqlite3 -framework QuartzCore -o /Users/ahernandez/Desktop/hackathon/ichurris/gtughackathon/ichurris/build/Debug-iphonesimulator/ichurris.app/ichurris0#
 
 CProcessInfoPlistFile /Users/ahernandez/Desktop/hackathon/ichurris/gtughackathon/ichurris/build/Debug-iphonesimulator/ichurris.app/Info.plist ichurris-Info.plist
 s319218025.607880
@@ -1814,10 +1844,10 @@ xcom.apple.compilers.gcc.4_2
 lSLF07#2@30"Precompile ichurris_Prefix.pch319218027#319218028#0(0"0(0#0#87"/Users/ahernandez/Desktop/hackathon/ichurris/gtughackathon/ichurris/ichurris_Prefix.pch8682928896#2125"    cd /Users/ahernandez/Desktop/hackathon/ichurris/gtughackathon/ichurris    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/ahernandez/Desktop/hackathon/ichurris/gtughackathon/ichurris/build/ichurris.build/Debug-iphonesimulator/ichurris.build/ichurris-generated-files.hmap -I/Users/ahernandez/Desktop/hackathon/ichurris/gtughackathon/ichurris/build/ichurris.build/Debug-iphonesimulator/ichurris.build/ichurris-own-target-headers.hmap -I/Users/ahernandez/Desktop/hackathon/ichurris/gtughackathon/ichurris/build/ichurris.build/Debug-iphonesimulator/ichurris.build/ichurris-all-target-headers.hmap -iquote /Users/ahernandez/Desktop/hackathon/ichurris/gtughackathon/ichurris/build/ichurris.build/Debug-iphonesimulator/ichurris.build/ichurris-project-headers.hmap -F/Users/ahernandez/Desktop/hackathon/ichurris/gtughackathon/ichurris/build/Debug-iphonesimulator -I/Users/ahernandez/Desktop/hackathon/ichurris/gtughackathon/ichurris/build/Debug-iphonesimulator/include -I/Users/ahernandez/Desktop/hackathon/ichurris/gtughackathon/ichurris/build/ichurris.build/Debug-iphonesimulator/ichurris.build/DerivedSources/i386 -I/Users/ahernandez/Desktop/hackathon/ichurris/gtughackathon/ichurris/build/ichurris.build/Debug-iphonesimulator/ichurris.build/DerivedSources -DDEBUG=1 -c /Users/ahernandez/Desktop/hackathon/ichurris/gtughackathon/ichurris/ichurris_Prefix.pch -o /var/folders/eL/eLuwaNwrExCXrDo2-fdCnE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ichurris_Prefix-eoyvtzlusvxlghdotkmoiwkurcvb/ichurris_Prefix.pch.gch0#
 
 CTouch /Users/ahernandez/Desktop/hackathon/ichurris/gtughackathon/ichurris/build/Debug-iphonesimulator/ichurris.app
-s319219005.105790
-e319219005.108451
+s319220136.341158
+e319220136.343745
 r1
 xTouch
 x/Users/ahernandez/Desktop/hackathon/ichurris/gtughackathon/ichurris/build/Debug-iphonesimulator/ichurris.app
-lSLF07#2@114"Touch /Users/ahernandez/Desktop/hackathon/ichurris/gtughackathon/ichurris/build/Debug-iphonesimulator/ichurris.app319219005#319219005#0(0"0(0#0#0"8682360864#337"    cd /Users/ahernandez/Desktop/hackathon/ichurris/gtughackathon/ichurris    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Users/ahernandez/Desktop/hackathon/ichurris/gtughackathon/ichurris/build/Debug-iphonesimulator/ichurris.app0#
+lSLF07#2@114"Touch /Users/ahernandez/Desktop/hackathon/ichurris/gtughackathon/ichurris/build/Debug-iphonesimulator/ichurris.app319220136#319220136#0(0"0(0#0#0"8684595712#337"    cd /Users/ahernandez/Desktop/hackathon/ichurris/gtughackathon/ichurris    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Users/ahernandez/Desktop/hackathon/ichurris/gtughackathon/ichurris/build/Debug-iphonesimulator/ichurris.app0#
 
