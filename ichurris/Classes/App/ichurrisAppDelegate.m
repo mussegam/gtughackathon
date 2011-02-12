@@ -16,7 +16,7 @@
 
 @synthesize window;
 @synthesize navigationController;
-
+@synthesize nearTowns;
 
 #pragma mark -
 #pragma mark Application lifecycle
@@ -97,11 +97,11 @@
 }
 
 - (void) didFinishUpdatingLocation:(CLLocation*)res {
-    [Town fetchNearTowns];
+    self.nearTowns = [Town fetchNearTowns];
 }
 
 - (void) didUpdateLocation:(CLLocation*)res {
-    [Town fetchNearTowns];
+    self.nearTowns = [Town fetchNearTowns];
 }
 
 

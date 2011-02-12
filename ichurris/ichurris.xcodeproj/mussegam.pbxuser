@@ -14,7 +14,6 @@
 			1D6058900D05DD3D006BFB54 /* ichurris */,
 		);
 		breakpoints = (
-			E30CA2D91306F12100E60C2C /* Town.m:101 */,
 		);
 		codeSenseManager = E3FEC5D013069EE500C95BE4 /* Code sense */;
 		executables = (
@@ -134,6 +133,21 @@
 			E30CA38D1306F8DF00E60C2C /* PBXTextBookmark */ = E30CA38D1306F8DF00E60C2C /* PBXTextBookmark */;
 			E30CA38E1306F8E600E60C2C /* PBXTextBookmark */ = E30CA38E1306F8E600E60C2C /* PBXTextBookmark */;
 			E30CA38F1306F8E600E60C2C /* PBXTextBookmark */ = E30CA38F1306F8E600E60C2C /* PBXTextBookmark */;
+			E30CA3921306F9CF00E60C2C /* PBXTextBookmark */ = E30CA3921306F9CF00E60C2C /* PBXTextBookmark */;
+			E30CA3931306F9CF00E60C2C /* PBXTextBookmark */ = E30CA3931306F9CF00E60C2C /* PBXTextBookmark */;
+			E30CA3941306F9CF00E60C2C /* PBXTextBookmark */ = E30CA3941306F9CF00E60C2C /* PBXTextBookmark */;
+			E30CA3951306F9CF00E60C2C /* PBXTextBookmark */ = E30CA3951306F9CF00E60C2C /* PBXTextBookmark */;
+			E30CA3971306F9D400E60C2C /* PBXTextBookmark */ = E30CA3971306F9D400E60C2C /* PBXTextBookmark */;
+			E30CA39A1306F9E900E60C2C /* PBXTextBookmark */ = E30CA39A1306F9E900E60C2C /* PBXTextBookmark */;
+			E30CA39D1306FA2100E60C2C /* PBXTextBookmark */ = E30CA39D1306FA2100E60C2C /* PBXTextBookmark */;
+			E30CA39E1306FA2100E60C2C /* PBXTextBookmark */ = E30CA39E1306FA2100E60C2C /* PBXTextBookmark */;
+			E30CA39F1306FA2100E60C2C /* PBXTextBookmark */ = E30CA39F1306FA2100E60C2C /* PBXTextBookmark */;
+			E30CA3A01306FA2100E60C2C /* PBXTextBookmark */ = E30CA3A01306FA2100E60C2C /* PBXTextBookmark */;
+			E30CA3A11306FA2100E60C2C /* PBXTextBookmark */ = E30CA3A11306FA2100E60C2C /* PBXTextBookmark */;
+			E30CA3A31306FA3000E60C2C /* PBXTextBookmark */ = E30CA3A31306FA3000E60C2C /* PBXTextBookmark */;
+			E30CA3A41306FA3000E60C2C /* PBXTextBookmark */ = E30CA3A41306FA3000E60C2C /* PBXTextBookmark */;
+			E30CA3A51306FA3000E60C2C /* PBXTextBookmark */ = E30CA3A51306FA3000E60C2C /* PBXTextBookmark */;
+			E30CA3A61306FA4900E60C2C /* PBXTextBookmark */ = E30CA3A61306FA4900E60C2C /* PBXTextBookmark */;
 		};
 		sourceControlManager = E3FEC5CF13069EE500C95BE4 /* Source Control */;
 		userBuildSettings = {
@@ -141,37 +155,38 @@
 	};
 	D4D2DCDE1306A67200F9A62A /* ichurrisAppDelegate.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1168, 745}}";
-			sepNavSelRange = "{0, 0}";
-			sepNavVisRange = "{0, 471}";
+			sepNavIntBoundsRect = "{{0, 0}, {1168, 722}}";
+			sepNavSelRange = "{488, 49}";
+			sepNavVisRange = "{0, 545}";
 		};
 	};
 	D4D2DCDF1306A67200F9A62A /* ichurrisAppDelegate.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1965, 1170}}";
-			sepNavSelRange = "{255, 0}";
-			sepNavVisRange = "{0, 2097}";
+			sepNavIntBoundsRect = "{{0, 0}, {1965, 1417}}";
+			sepNavSelRange = "{3233, 0}";
+			sepNavVisRange = "{1884, 1377}";
 		};
 	};
 	D4D2E0C21306E59700F9A62A /* Town.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1168, 611}}";
+			sepNavIntBoundsRect = "{{0, 0}, {1168, 745}}";
 			sepNavSelRange = "{215, 0}";
-			sepNavVisRange = "{143, 1110}";
+			sepNavVisRange = "{0, 1253}";
 		};
 	};
 	D4D2E0C31306E59700F9A62A /* Town.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1188, 1378}}";
-			sepNavSelRange = "{717, 0}";
-			sepNavVisRange = "{324, 1488}";
+			sepNavIntBoundsRect = "{{0, 0}, {1188, 1430}}";
+			sepNavSelRange = "{2859, 0}";
+			sepNavVisRange = "{1007, 1904}";
 		};
 	};
 	D4D2E0E31306ECEB00F9A62A /* MyCLController.h */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {803, 715}}";
 			sepNavSelRange = "{970, 23}";
-			sepNavVisRange = "{417, 1086}";
+			sepNavVisRange = "{417, 1082}";
+			sepNavWindowFrame = "{{19, 315}, {750, 558}}";
 		};
 	};
 	D4D2E0E41306ECEB00F9A62A /* MyCLController.m */ = {
@@ -196,7 +211,7 @@
 		fRef = D4D2DCDF1306A67200F9A62A /* ichurrisAppDelegate.m */;
 		name = "ichurrisAppDelegate.m: 29";
 		rLen = 0;
-		rLoc = 902;
+		rLoc = 924;
 		rType = 0;
 		vrLen = 1958;
 		vrLoc = 3;
@@ -206,7 +221,7 @@
 		fRef = D4D2E0C31306E59700F9A62A /* Town.m */;
 		name = "Town.m: 58";
 		rLen = 0;
-		rLoc = 2032;
+		rLoc = 2222;
 		rType = 0;
 		vrLen = 1128;
 		vrLoc = 30;
@@ -246,7 +261,7 @@
 		fRef = D4D2E0C31306E59700F9A62A /* Town.m */;
 		name = "Town.m: 64";
 		rLen = 0;
-		rLoc = 1619;
+		rLoc = 1809;
 		rType = 0;
 		vrLen = 1047;
 		vrLoc = 184;
@@ -256,35 +271,17 @@
 		fRef = D4D2E0C31306E59700F9A62A /* Town.m */;
 		name = "Town.m: 65";
 		rLen = 0;
-		rLoc = 1920;
+		rLoc = 2110;
 		rType = 0;
 		vrLen = 1117;
 		vrLoc = 184;
-	};
-	E30CA2D91306F12100E60C2C /* Town.m:101 */ = {
-		isa = PBXFileBreakpoint;
-		actions = (
-		);
-		breakpointStyle = 0;
-		continueAfterActions = 0;
-		countType = 0;
-		delayBeforeContinue = 0;
-		fileReference = D4D2E0C31306E59700F9A62A /* Town.m */;
-		functionName = "+fetchNearTowns";
-		hitCount = 1;
-		ignoreCount = 0;
-		lineNumber = 101;
-		location = ichurris;
-		modificationTime = 319224017.305308;
-		originalNumberOfMultipleMatches = 1;
-		state = 1;
 	};
 	E30CA2DF1306F13100E60C2C /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = D4D2E0C31306E59700F9A62A /* Town.m */;
 		name = "Town.m: 65";
 		rLen = 0;
-		rLoc = 2032;
+		rLoc = 2222;
 		rType = 0;
 		vrLen = 1133;
 		vrLoc = 184;
@@ -294,7 +291,7 @@
 		fRef = D4D2E0C31306E59700F9A62A /* Town.m */;
 		name = "Town.m: 67";
 		rLen = 0;
-		rLoc = 2032;
+		rLoc = 2222;
 		rType = 0;
 		vrLen = 1144;
 		vrLoc = 207;
@@ -304,7 +301,7 @@
 		fRef = D4D2E0C31306E59700F9A62A /* Town.m */;
 		name = "Town.m: 67";
 		rLen = 0;
-		rLoc = 2032;
+		rLoc = 2222;
 		rType = 0;
 		vrLen = 1144;
 		vrLoc = 207;
@@ -314,7 +311,7 @@
 		fRef = D4D2E0C31306E59700F9A62A /* Town.m */;
 		name = "Town.m: 67";
 		rLen = 0;
-		rLoc = 2032;
+		rLoc = 2222;
 		rType = 0;
 		vrLen = 1016;
 		vrLoc = 207;
@@ -324,7 +321,7 @@
 		fRef = D4D2E0C31306E59700F9A62A /* Town.m */;
 		name = "Town.m: 69";
 		rLen = 0;
-		rLoc = 2032;
+		rLoc = 2222;
 		rType = 0;
 		vrLen = 1184;
 		vrLoc = 206;
@@ -334,7 +331,7 @@
 		fRef = D4D2E0C31306E59700F9A62A /* Town.m */;
 		name = "Town.m: 69";
 		rLen = 0;
-		rLoc = 1947;
+		rLoc = 2137;
 		rType = 0;
 		vrLen = 335;
 		vrLoc = 1070;
@@ -344,7 +341,7 @@
 		fRef = D4D2E0C31306E59700F9A62A /* Town.m */;
 		name = "Town.m: 66";
 		rLen = 0;
-		rLoc = 1920;
+		rLoc = 2110;
 		rType = 0;
 		vrLen = 1026;
 		vrLoc = 385;
@@ -354,7 +351,7 @@
 		fRef = D4D2E0C31306E59700F9A62A /* Town.m */;
 		name = "Town.m: 66";
 		rLen = 0;
-		rLoc = 1920;
+		rLoc = 2110;
 		rType = 0;
 		vrLen = 1084;
 		vrLoc = 349;
@@ -364,7 +361,7 @@
 		fRef = D4D2E0C31306E59700F9A62A /* Town.m */;
 		name = "Town.m: 66";
 		rLen = 0;
-		rLoc = 1920;
+		rLoc = 2110;
 		rType = 0;
 		vrLen = 1084;
 		vrLoc = 349;
@@ -374,7 +371,7 @@
 		fRef = D4D2E0C31306E59700F9A62A /* Town.m */;
 		name = "Town.m: 66";
 		rLen = 0;
-		rLoc = 1920;
+		rLoc = 2110;
 		rType = 0;
 		vrLen = 472;
 		vrLoc = 925;
@@ -384,7 +381,7 @@
 		fRef = D4D2E0C31306E59700F9A62A /* Town.m */;
 		name = "Town.m: 66";
 		rLen = 0;
-		rLoc = 1920;
+		rLoc = 2110;
 		rType = 0;
 		vrLen = 1140;
 		vrLoc = 348;
@@ -394,7 +391,7 @@
 		fRef = D4D2E0C31306E59700F9A62A /* Town.m */;
 		name = "Town.m: 66";
 		rLen = 0;
-		rLoc = 1920;
+		rLoc = 2110;
 		rType = 0;
 		vrLen = 1135;
 		vrLoc = 348;
@@ -404,7 +401,7 @@
 		fRef = D4D2E0C31306E59700F9A62A /* Town.m */;
 		name = "Town.m: 66";
 		rLen = 0;
-		rLoc = 1920;
+		rLoc = 2110;
 		rType = 0;
 		vrLen = 527;
 		vrLoc = 925;
@@ -414,7 +411,7 @@
 		fRef = D4D2E0C31306E59700F9A62A /* Town.m */;
 		name = "Town.m: 67";
 		rLen = 0;
-		rLoc = 1659;
+		rLoc = 1849;
 		rType = 0;
 		vrLen = 1135;
 		vrLoc = 453;
@@ -464,7 +461,7 @@
 		fRef = D4D2E0C31306E59700F9A62A /* Town.m */;
 		name = "Town.m: 60";
 		rLen = 0;
-		rLoc = 1040;
+		rLoc = 1230;
 		rType = 0;
 		vrLen = 1221;
 		vrLoc = 554;
@@ -474,7 +471,7 @@
 		fRef = D4D2E0C31306E59700F9A62A /* Town.m */;
 		name = "Town.m: 62";
 		rLen = 0;
-		rLoc = 1234;
+		rLoc = 1424;
 		rType = 0;
 		vrLen = 1316;
 		vrLoc = 554;
@@ -511,7 +508,7 @@
 		fRef = D4D2E0C31306E59700F9A62A /* Town.m */;
 		name = "Town.m: 64";
 		rLen = 0;
-		rLoc = 1244;
+		rLoc = 1434;
 		rType = 0;
 		vrLen = 1452;
 		vrLoc = 554;
@@ -531,7 +528,7 @@
 		fRef = D4D2E0C31306E59700F9A62A /* Town.m */;
 		name = "Town.m: 64";
 		rLen = 0;
-		rLoc = 1244;
+		rLoc = 1434;
 		rType = 0;
 		vrLen = 1452;
 		vrLoc = 554;
@@ -541,7 +538,7 @@
 		fRef = D4D2E0C31306E59700F9A62A /* Town.m */;
 		name = "Town.m: 64";
 		rLen = 0;
-		rLoc = 1244;
+		rLoc = 1434;
 		rType = 0;
 		vrLen = 793;
 		vrLoc = 1024;
@@ -551,7 +548,7 @@
 		fRef = D4D2E0C31306E59700F9A62A /* Town.m */;
 		name = "Town.m: 64";
 		rLen = 0;
-		rLoc = 1244;
+		rLoc = 1434;
 		rType = 0;
 		vrLen = 1480;
 		vrLoc = 554;
@@ -581,7 +578,7 @@
 		fRef = D4D2DCDF1306A67200F9A62A /* ichurrisAppDelegate.m */;
 		name = "ichurrisAppDelegate.m: 30";
 		rLen = 0;
-		rLoc = 902;
+		rLoc = 924;
 		rType = 0;
 		vrLen = 2081;
 		vrLoc = 0;
@@ -591,7 +588,7 @@
 		fRef = D4D2DCDF1306A67200F9A62A /* ichurrisAppDelegate.m */;
 		name = "ichurrisAppDelegate.m: 95";
 		rLen = 0;
-		rLoc = 3199;
+		rLoc = 3255;
 		rType = 0;
 		vrLen = 1638;
 		vrLoc = 1419;
@@ -611,7 +608,7 @@
 		fRef = D4D2DCDF1306A67200F9A62A /* ichurrisAppDelegate.m */;
 		name = "ichurrisAppDelegate.m: 95";
 		rLen = 0;
-		rLoc = 3199;
+		rLoc = 3255;
 		rType = 0;
 		vrLen = 1638;
 		vrLoc = 1419;
@@ -621,7 +618,7 @@
 		fRef = D4D2E0C31306E59700F9A62A /* Town.m */;
 		name = "Town.m: 64";
 		rLen = 0;
-		rLoc = 1244;
+		rLoc = 1434;
 		rType = 0;
 		vrLen = 793;
 		vrLoc = 1024;
@@ -631,7 +628,7 @@
 		fRef = D4D2DCDF1306A67200F9A62A /* ichurrisAppDelegate.m */;
 		name = "ichurrisAppDelegate.m: 95";
 		rLen = 0;
-		rLoc = 3199;
+		rLoc = 3255;
 		rType = 0;
 		vrLen = 253;
 		vrLoc = 2803;
@@ -641,7 +638,7 @@
 		fRef = D4D2DCDF1306A67200F9A62A /* ichurrisAppDelegate.m */;
 		name = "ichurrisAppDelegate.m: 95";
 		rLen = 0;
-		rLoc = 3199;
+		rLoc = 3255;
 		rType = 0;
 		vrLen = 1642;
 		vrLoc = 1419;
@@ -651,7 +648,7 @@
 		fRef = D4D2DCDF1306A67200F9A62A /* ichurrisAppDelegate.m */;
 		name = "ichurrisAppDelegate.m: 95";
 		rLen = 0;
-		rLoc = 3199;
+		rLoc = 3255;
 		rType = 0;
 		vrLen = 1638;
 		vrLoc = 1419;
@@ -671,7 +668,7 @@
 		fRef = D4D2DCDF1306A67200F9A62A /* ichurrisAppDelegate.m */;
 		name = "ichurrisAppDelegate.m: 95";
 		rLen = 0;
-		rLoc = 3199;
+		rLoc = 3255;
 		rType = 0;
 		vrLen = 253;
 		vrLoc = 2803;
@@ -680,7 +677,7 @@
 		isa = PBXTextBookmark;
 		fRef = D4D2E0C31306E59700F9A62A /* Town.m */;
 		rLen = 0;
-		rLoc = 94;
+		rLoc = 98;
 		rType = 1;
 	};
 	E30CA3511306F68D00E60C2C /* PBXTextBookmark */ = {
@@ -688,7 +685,7 @@
 		fRef = D4D2E0C31306E59700F9A62A /* Town.m */;
 		name = "Town.m: 80";
 		rLen = 0;
-		rLoc = 2012;
+		rLoc = 2202;
 		rType = 0;
 		vrLen = 553;
 		vrLoc = 1481;
@@ -698,7 +695,7 @@
 		fRef = D4D2DCDF1306A67200F9A62A /* ichurrisAppDelegate.m */;
 		name = "ichurrisAppDelegate.m: 95";
 		rLen = 0;
-		rLoc = 3199;
+		rLoc = 3255;
 		rType = 0;
 		vrLen = 1642;
 		vrLoc = 1419;
@@ -708,7 +705,7 @@
 		fRef = D4D2E0C31306E59700F9A62A /* Town.m */;
 		name = "Town.m: 77";
 		rLen = 0;
-		rLoc = 1809;
+		rLoc = 1999;
 		rType = 0;
 		vrLen = 1468;
 		vrLoc = 624;
@@ -728,7 +725,7 @@
 		fRef = D4D2E0C31306E59700F9A62A /* Town.m */;
 		name = "Town.m: 77";
 		rLen = 0;
-		rLoc = 1809;
+		rLoc = 1999;
 		rType = 0;
 		vrLen = 1468;
 		vrLoc = 624;
@@ -745,7 +742,7 @@
 		fRef = D4D2DCDF1306A67200F9A62A /* ichurrisAppDelegate.m */;
 		name = "ichurrisAppDelegate.m: 95";
 		rLen = 0;
-		rLoc = 3173;
+		rLoc = 3212;
 		rType = 0;
 		vrLen = 1572;
 		vrLoc = 1489;
@@ -755,7 +752,7 @@
 		fRef = D4D2DCDF1306A67200F9A62A /* ichurrisAppDelegate.m */;
 		name = "ichurrisAppDelegate.m: 95";
 		rLen = 0;
-		rLoc = 3173;
+		rLoc = 3212;
 		rType = 0;
 		vrLen = 239;
 		vrLoc = 2822;
@@ -765,7 +762,7 @@
 		fRef = D4D2E0C31306E59700F9A62A /* Town.m */;
 		name = "Town.m: 83";
 		rLen = 0;
-		rLoc = 2012;
+		rLoc = 2202;
 		rType = 0;
 		vrLen = 550;
 		vrLoc = 1550;
@@ -812,7 +809,7 @@
 		fRef = D4D2E0C31306E59700F9A62A /* Town.m */;
 		name = "Town.m: 77";
 		rLen = 0;
-		rLoc = 1809;
+		rLoc = 1999;
 		rType = 0;
 		vrLen = 1489;
 		vrLoc = 605;
@@ -822,7 +819,7 @@
 		fRef = D4D2DCDF1306A67200F9A62A /* ichurrisAppDelegate.m */;
 		name = "ichurrisAppDelegate.m: 95";
 		rLen = 0;
-		rLoc = 3173;
+		rLoc = 3212;
 		rType = 0;
 		vrLen = 1642;
 		vrLoc = 1419;
@@ -861,7 +858,7 @@
 		isa = PBXTextBookmark;
 		fRef = D4D2E0C31306E59700F9A62A /* Town.m */;
 		rLen = 0;
-		rLoc = 94;
+		rLoc = 98;
 		rType = 1;
 	};
 	E30CA36C1306F75500E60C2C /* PBXTextBookmark */ = {
@@ -869,7 +866,7 @@
 		fRef = D4D2E0C31306E59700F9A62A /* Town.m */;
 		name = "Town.m: 83";
 		rLen = 0;
-		rLoc = 2012;
+		rLoc = 2202;
 		rType = 0;
 		vrLen = 1450;
 		vrLoc = 644;
@@ -889,7 +886,7 @@
 		fRef = D4D2E0C31306E59700F9A62A /* Town.m */;
 		name = "Town.m: 83";
 		rLen = 0;
-		rLoc = 2012;
+		rLoc = 2202;
 		rType = 0;
 		vrLen = 555;
 		vrLoc = 1539;
@@ -899,7 +896,7 @@
 		fRef = D4D2E0C31306E59700F9A62A /* Town.m */;
 		name = "Town.m: 98";
 		rLen = 0;
-		rLoc = 2584;
+		rLoc = 2774;
 		rType = 0;
 		vrLen = 1960;
 		vrLoc = 756;
@@ -919,7 +916,7 @@
 		fRef = D4D2E0C31306E59700F9A62A /* Town.m */;
 		name = "Town.m: 92";
 		rLen = 0;
-		rLoc = 2492;
+		rLoc = 2682;
 		rType = 0;
 		vrLen = 1935;
 		vrLoc = 756;
@@ -939,7 +936,7 @@
 		fRef = D4D2E0C31306E59700F9A62A /* Town.m */;
 		name = "Town.m: 92";
 		rLen = 0;
-		rLoc = 2492;
+		rLoc = 2682;
 		rType = 0;
 		vrLen = 1935;
 		vrLoc = 756;
@@ -949,7 +946,7 @@
 		fRef = D4D2E0C31306E59700F9A62A /* Town.m */;
 		name = "Town.m: 92";
 		rLen = 0;
-		rLoc = 2492;
+		rLoc = 2682;
 		rType = 0;
 		vrLen = 406;
 		vrLoc = 2285;
@@ -959,7 +956,7 @@
 		fRef = D4D2E0C31306E59700F9A62A /* Town.m */;
 		name = "Town.m: 102";
 		rLen = 0;
-		rLoc = 2712;
+		rLoc = 2902;
 		rType = 0;
 		vrLen = 1906;
 		vrLoc = 815;
@@ -979,7 +976,7 @@
 		fRef = D4D2E0C31306E59700F9A62A /* Town.m */;
 		name = "Town.m: 102";
 		rLen = 0;
-		rLoc = 2712;
+		rLoc = 2902;
 		rType = 0;
 		vrLen = 1906;
 		vrLoc = 815;
@@ -989,7 +986,7 @@
 		fRef = D4D2E0C31306E59700F9A62A /* Town.m */;
 		name = "Town.m: 102";
 		rLen = 0;
-		rLoc = 2712;
+		rLoc = 2902;
 		rType = 0;
 		vrLen = 633;
 		vrLoc = 1946;
@@ -999,7 +996,7 @@
 		fRef = D4D2E0C31306E59700F9A62A /* Town.m */;
 		name = "Town.m: 102";
 		rLen = 0;
-		rLoc = 2712;
+		rLoc = 2902;
 		rType = 0;
 		vrLen = 1906;
 		vrLoc = 815;
@@ -1019,7 +1016,7 @@
 		fRef = D4D2E0C31306E59700F9A62A /* Town.m */;
 		name = "Town.m: 102";
 		rLen = 0;
-		rLoc = 2712;
+		rLoc = 2902;
 		rType = 0;
 		vrLen = 1906;
 		vrLoc = 815;
@@ -1029,7 +1026,7 @@
 		fRef = D4D2E0C31306E59700F9A62A /* Town.m */;
 		name = "Town.m: 102";
 		rLen = 0;
-		rLoc = 2712;
+		rLoc = 2902;
 		rType = 0;
 		vrLen = 633;
 		vrLoc = 1946;
@@ -1053,6 +1050,153 @@
 		rType = 0;
 		vrLen = 1086;
 		vrLoc = 417;
+	};
+	E30CA3921306F9CF00E60C2C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = D4D2E0C21306E59700F9A62A /* Town.h */;
+		name = "Town.h: 10";
+		rLen = 0;
+		rLoc = 215;
+		rType = 0;
+		vrLen = 1253;
+		vrLoc = 0;
+	};
+	E30CA3931306F9CF00E60C2C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = D4D2E0C31306E59700F9A62A /* Town.m */;
+		name = "Town.m: 45";
+		rLen = 0;
+		rLoc = 906;
+		rType = 0;
+		vrLen = 1166;
+		vrLoc = 143;
+	};
+	E30CA3941306F9CF00E60C2C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = D4D2E0C31306E59700F9A62A /* Town.m */;
+		name = "Town.m: 110";
+		rLen = 0;
+		rLoc = 2911;
+		rType = 0;
+		vrLen = 1906;
+		vrLoc = 1005;
+	};
+	E30CA3951306F9CF00E60C2C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = D4D2E0E31306ECEB00F9A62A /* MyCLController.h */;
+		name = "MyCLController.h: 40";
+		rLen = 23;
+		rLoc = 970;
+		rType = 0;
+		vrLen = 1082;
+		vrLoc = 417;
+	};
+	E30CA3971306F9D400E60C2C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = D4D2E0C31306E59700F9A62A /* Town.m */;
+		name = "Town.m: 110";
+		rLen = 0;
+		rLoc = 2911;
+		rType = 0;
+		vrLen = 1906;
+		vrLoc = 1005;
+	};
+	E30CA39A1306F9E900E60C2C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = D4D2E0C31306E59700F9A62A /* Town.m */;
+		name = "Town.m: 110";
+		rLen = 0;
+		rLoc = 2911;
+		rType = 0;
+		vrLen = 348;
+		vrLoc = 2563;
+	};
+	E30CA39D1306FA2100E60C2C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = D4D2E0C31306E59700F9A62A /* Town.m */;
+		name = "Town.m: 110";
+		rLen = 0;
+		rLoc = 2911;
+		rType = 0;
+		vrLen = 1903;
+		vrLoc = 1008;
+	};
+	E30CA39E1306FA2100E60C2C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = D4D2DCDE1306A67200F9A62A /* ichurrisAppDelegate.h */;
+		name = "ichurrisAppDelegate.h: 20";
+		rLen = 49;
+		rLoc = 488;
+		rType = 0;
+		vrLen = 545;
+		vrLoc = 0;
+	};
+	E30CA39F1306FA2100E60C2C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = D4D2DCDF1306A67200F9A62A /* ichurrisAppDelegate.m */;
+		name = "ichurrisAppDelegate.m: 19";
+		rLen = 0;
+		rLoc = 397;
+		rType = 0;
+		vrLen = 2119;
+		vrLoc = 0;
+	};
+	E30CA3A01306FA2100E60C2C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = D4D2DCDF1306A67200F9A62A /* ichurrisAppDelegate.m */;
+		name = "ichurrisAppDelegate.m: 104";
+		rLen = 0;
+		rLoc = 3233;
+		rType = 0;
+		vrLen = 1377;
+		vrLoc = 1884;
+	};
+	E30CA3A11306FA2100E60C2C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = D4D2E0E31306ECEB00F9A62A /* MyCLController.h */;
+		name = "MyCLController.h: 40";
+		rLen = 23;
+		rLoc = 970;
+		rType = 0;
+		vrLen = 1082;
+		vrLoc = 417;
+	};
+	E30CA3A31306FA3000E60C2C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = D4D2DCDF1306A67200F9A62A /* ichurrisAppDelegate.m */;
+		name = "ichurrisAppDelegate.m: 104";
+		rLen = 0;
+		rLoc = 3233;
+		rType = 0;
+		vrLen = 1377;
+		vrLoc = 1884;
+	};
+	E30CA3A41306FA3000E60C2C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = D4D2E0C31306E59700F9A62A /* Town.m */;
+		rLen = 0;
+		rLoc = 104;
+		rType = 1;
+	};
+	E30CA3A51306FA3000E60C2C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = D4D2E0C31306E59700F9A62A /* Town.m */;
+		name = "Town.m: 105";
+		rLen = 0;
+		rLoc = 2859;
+		rType = 0;
+		vrLen = 1904;
+		vrLoc = 1007;
+	};
+	E30CA3A61306FA4900E60C2C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = D4D2E0C31306E59700F9A62A /* Town.m */;
+		name = "Town.m: 105";
+		rLen = 0;
+		rLoc = 2859;
+		rType = 0;
+		vrLen = 1904;
+		vrLoc = 1007;
 	};
 	E3FEC5C613069EE300C95BE4 /* ichurris */ = {
 		isa = PBXExecutable;

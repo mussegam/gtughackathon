@@ -41,6 +41,10 @@
 	[super dealloc];
 }
 
+- (NSString *)description {
+    return [NSString stringWithFormat:@"Name:%@ Lat:%f Lon:%f Males:%d Females:%d",self.name, self.lat, self.lon, [self getTotalMale], [self getTotalFemale]];
+}
+
 #pragma mark -
 #pragma mark Public
 
