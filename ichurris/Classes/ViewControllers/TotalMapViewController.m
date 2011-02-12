@@ -6,6 +6,7 @@
 //  Copyright 2011 __MyCompanyName__. All rights reserved.
 //
 
+#import <stdlib.h>
 #import "TotalMapViewController.h"
 #import "ichurrisAppDelegate.h"
 #import "Town.h"
@@ -29,7 +30,7 @@
         
         double radius = [town getGetCachoProbability];
         NSLog(@"%f",radius);
-        
+        radius = radius*100;
         if (radius == 0) radius = 1000.0;
         NSLog(@"%f",radius);
         
@@ -74,6 +75,8 @@
     MKCircleView *circleView = [[[MKCircleView alloc] initWithCircle:overlay] autorelease];
     circleView.lineWidth = 1.0;
     circleView.strokeColor = [UIColor redColor];
+	
+	circleView.fillColor = [UIColor colorWithRed:arc4random() green:arc4random() blue:arc4random() alpha:0.5];
     return circleView;
 }
 

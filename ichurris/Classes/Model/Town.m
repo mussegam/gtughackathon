@@ -6,6 +6,7 @@
 //  Copyright 2011 __MyCompanyName__. All rights reserved.
 //
 
+#import <stdlib.h>
 #import "MyCLController.h"
 #import "Town.h"
 #import "FMDatabase.h"
@@ -205,9 +206,10 @@
 	if (mySex == desiredSex) results =- 10;	// Homesexuality moustache penalty
 	results -= ([myAge intValue] - [desiredAge intValue]) / 2;	// Asaltacunas bonus/malus
 	
-	if (results<10) results = 10;
-	
-	return (NSUInteger)results;
+	// Niquelator
+	if (results<10) results = 10;	
+	return (NSUInteger)results+(arc4random() % 10);
+;
 }
 
 @end
