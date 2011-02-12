@@ -328,7 +328,7 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>E30CA2F91306F2C200E60C2C</string>
+										<string>E30CA2FB1306F3AA00E60C2C</string>
 										<key>history</key>
 										<array>
 											<string>E30CA2F81306F26800E60C2C</string>
@@ -648,7 +648,6 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>E30CA2FA1306F2C200E60C2C</string>
 		<string>E30CA2E21306F13100E60C2C</string>
 		<string>E30CA2E31306F13100E60C2C</string>
 		<string>/Users/mussegam/Development/gtughackathon/ichurris/ichurris.xcodeproj</string>
