@@ -8,6 +8,7 @@
 
 #import "ASIHTTPRequest.h"
 #import "Defines.h"
+#import "Town.h"
 #import "TownCell.h"
 #import "TownViewController.h"
 #import <QuartzCore/QuartzCore.h>
@@ -72,6 +73,8 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
 	ResultsViewController *rvc = [[ResultsViewController alloc] initWithNibName:@"ResultsViewController" bundle:nil];
+	Town *town = (Town*)[towns objectAtIndex:indexPath.row];
+	rvc.resultLabel.text = [NSString stringWithFormat:@"%d",[town getGetCachoProbability]];
 	[[self navigationController] pushViewController:rvc animated:YES];
 	[rvc release];
 }

@@ -7,11 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-<<<<<<< HEAD
 #import "MyCLController.h"
-=======
-#import <CoreLocation/CoreLocation.h>
->>>>>>> 4960720588795c8de67ab0059fd3158ea4742192
 
 @interface Town : NSObject {
 	NSString *name;
