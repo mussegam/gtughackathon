@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#import "MyCLController.h"
 
 @interface Town : NSObject {
 	NSString *name;
@@ -21,7 +21,8 @@
 	NSUInteger female0a14;
 	NSUInteger female15a64;
 	NSUInteger female65a84;
-	NSUInteger female85;	
+	NSUInteger female85;
+	NSUInteger total;
 }
 
 @property (nonatomic, retain) NSString *name;
@@ -36,10 +37,12 @@
 @property (nonatomic, assign) NSUInteger female15a64;
 @property (nonatomic, assign) NSUInteger female65a84;
 @property (nonatomic, assign) NSUInteger female85;	
+@property (nonatomic, assign) NSUInteger total;
 
 - (double)getDistanceFrom:(CLLocation*)aCoord;
 - (NSUInteger)getTotalMale;
 - (NSUInteger)getTotalFemale;
+- (NSUInteger)getGetCachoProbability;
 
 + (NSArray *)fetchNearTowns;
 
