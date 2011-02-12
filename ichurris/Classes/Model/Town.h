@@ -13,6 +13,7 @@
 	NSString *name;
 	double lat;
 	double lon;
+	double distance;
 	NSUInteger male0a14;
 	NSUInteger male15a64;
 	NSUInteger male65a84;
@@ -26,6 +27,7 @@
 @property (nonatomic, retain) NSString *name;
 @property (nonatomic, assign) double lat;
 @property (nonatomic, assign) double lon;
+@property (nonatomic, assign, getter=getDistanceTo) double distance;
 @property (nonatomic, assign) NSUInteger male0a14;
 @property (nonatomic, assign) NSUInteger male15a64;
 @property (nonatomic, assign) NSUInteger male65a84;
@@ -35,6 +37,7 @@
 @property (nonatomic, assign) NSUInteger female65a84;
 @property (nonatomic, assign) NSUInteger female85;	
 
+- (double)getDistanceFrom:(CLLocation*)aCoord;
 - (NSUInteger)getTotalMale;
 - (NSUInteger)getTotalFemale;
 

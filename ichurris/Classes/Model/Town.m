@@ -6,12 +6,13 @@
 //  Copyright 2011 __MyCompanyName__. All rights reserved.
 //
 
+#import "MyCLController.h"
 #import "Town.h"
 
 
 @implementation Town
 
-@synthesize name, lat, lon;
+@synthesize name, lat, lon, distance;
 @synthesize male0a14, male15a64, male65a84, male85;
 @synthesize female0a14, female15a64, female65a84, female85;	
 
@@ -42,6 +43,10 @@
 
 #pragma mark -
 #pragma mark Public
+
+- (double)getDistanceFrom:(CLLocation*)aCoord {
+	return 0;
+}
 
 - (NSUInteger)getTotalMale {
 	return male0a14 + male15a64 + male65a84 + male85;

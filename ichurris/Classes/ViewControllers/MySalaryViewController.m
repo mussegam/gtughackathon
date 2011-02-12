@@ -37,10 +37,20 @@
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
     [super viewDidLoad];
-	[self.navigationItem setTitle:@"¿Cual es tu salario?"];
-	labels = [[NSArray arrayWithObjects:
-			   @"0-12000€/año",@"12000-18000€/año",@"18000-25000€/año",@"25000-36000€/año",@"36000-50000€/año",@"50000-100000€/año",@"100000-250000€/año",@"+250000€/año",nil] 
-			  retain];
+	NSString *mySex = [[NSUserDefaultsManager sharedInstance] retrieveFromUserDefaults:kUDMySex];
+	if (mySex && [mySex isEqualToString:@"female"]) {
+		[self.navigationItem setTitle:@"¿Talla de sujetador?"];
+		labels = [[NSArray arrayWithObjects:
+				   @"<60",@"60-70",@"70-80",@"80-90",@"90-100",@"100-110",@"110-120",@"+120",nil] 
+				  retain];		
+	}
+	else {
+		[self.navigationItem setTitle:@"¿Cual es tu salario?"];
+		labels = [[NSArray arrayWithObjects:
+				   @"0-12000€/año",@"12000-18000€/año",@"18000-25000€/año",@"25000-36000€/año",@"36000-50000€/año",@"50000-100000€/año",@"100000-250000€/año",@"+250000€/año",nil] 
+				  retain];		
+	}
+	
 	values = [[NSArray arrayWithObjects:
 			   [NSNumber numberWithInt:0],
 			   [NSNumber numberWithInt:12000],
