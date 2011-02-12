@@ -57,6 +57,11 @@
 }
 
 + (NSArray *)fetchNearTowns {
+    CLLocation *location = [[MyCLController sharedInstance] bestEffortAtLocation];
+    float latitude = location.coordinate.latitude;
+    float longitude = location.coordinate.longitude;
+    float factor = 0.1;
+    
     NSMutableArray *results = [[NSMutableArray alloc] init];
     NSString *path = [[NSBundle mainBundle] pathForResource:@"towns" ofType:@"db"];
     FMDatabase* db = [FMDatabase databaseWithPath:path];
@@ -67,16 +72,34 @@
     }
     
     NSString *query = @"select name,lat,lon,home0,home1,home2,home3,dona0,dona1,dona2,dona3 from towns";
-    NSString *where = @"where lat> AND lat<= AND lon> AND lon<=";
+    NSString *where = [NSString stringWithFormat:@" where lat>%f AND lat<=%f AND lon>%f AND lon<=%f",latitude-factor,latitude+factor,longitude-factor,longitude+factor];
+    query = [query stringByAppendingString:where];
+    NSLog(@"query: %@",query);
     
     FMResultSet *rs = [db executeQuery:query];
     while ([rs next]) {
-        NSLog(@"%@",[rs stringForColumnIndex:0]);
+        Town *town = [[Town alloc] init];
+        town.name = [rs stringForColumnIndex:0];
+        town.lat = [rs doubleForColumnIndex:1];
+		town.lon = [rs doubleForColumnIndex:2];
+		town.male0a14 = [rs intForColumnIndex:3];
+		town.male15a64 = [rs intForColumnIndex:4];
+		town.male65a84 = [rs intForColumnIndex:5];
+		town.male85 = [rs intForColumnIndex:6];
+		town.female0a14 = [rs intForColumnIndex:7];
+		town.female15a64 = [rs intForColumnIndex:8];
+		town.female65a84 = [rs intForColumnIndex:9];
+		town.female85 = [rs intForColumnIndex:10];
+        
+        [results addObject:town];
+        [town release];
     }
     
     [db close];
     
-    return [NSArray array];
+    NSArray *outArray = [NSArray arrayWithArray:results];
+    [results release];
+    return outArray;
 }
 
 @end
