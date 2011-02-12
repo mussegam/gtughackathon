@@ -13,11 +13,12 @@
 #import "TownViewController.h"
 #import <QuartzCore/QuartzCore.h>
 #import "ResultsViewController.h"
-
+#import "ichurrisAppDelegate.h"
+#import "Town.h"
 
 @implementation TownViewController
 
-@synthesize myTableView;
+@synthesize myTableView, towns;
 
 // The designated initializer.  Override if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
 /*
@@ -34,12 +35,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 	[self.navigationItem setTitle:@"¿Para que municipio?"];
-	towns = [[NSMutableArray alloc] init];
-	[towns addObject:@"a"];
-	[towns addObject:@"b"];
-	[towns addObject:@"c"];
-	[towns addObject:@"d"];
-	[towns addObject:@"e"];
+    ichurrisAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
+    self.towns = [NSMutableArray arrayWithArray:[delegate nearTowns]];
 }
 
 /*
@@ -111,8 +108,10 @@
 		[cell.thumbnailImage setImage:[UIImage imageWithData:imageData]];
 	}];
 	[request startAsynchronous];
-	
-	cell.townName.text = @"Basalona";
+    
+    Town *town = [towns objectAtIndex:indexPath.row];
+    
+	cell.townName.text = town.name;
 	
 	return cell;
 }
