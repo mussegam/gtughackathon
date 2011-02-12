@@ -8,7 +8,7 @@
 
 #import "ichurrisAppDelegate.h"
 #import "SexSelectorViewController.h"
-
+#import "Town.h"
 
 @implementation ichurrisAppDelegate
 
@@ -26,6 +26,7 @@
     // Add the navigation controller's view to the window and display.
     [self.window addSubview:navigationController.view];
     [self.window makeKeyAndVisible];
+    [Town fetchNearTowns];
 
     return YES;
 }

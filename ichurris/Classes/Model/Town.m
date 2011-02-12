@@ -7,7 +7,7 @@
 //
 
 #import "Town.h"
-
+#import "FMDatabase.h"
 
 @implementation Town
 
@@ -49,6 +49,29 @@
 
 - (NSUInteger)getTotalFemale {
 	return female0a14 + female15a64 + female65a84 + female85;
+}
+
++ (NSArray *)fetchNearTowns {
+    NSMutableArray *results = [[NSMutableArray alloc] init];
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"towns" ofType:@"db"];
+    FMDatabase* db = [FMDatabase databaseWithPath:path];
+    
+    if (![db open]) {
+        NSLog(@"Could not open db.");
+        return nil;
+    }
+    
+    NSString *query = @"select name,lat,lon,home0,home1,home2,home3,dona0,dona1,dona2,dona3 from towns";
+    NSString *where = @"where lat> AND lat<= AND lon> AND lon<=";
+    
+    FMResultSet *rs = [db executeQuery:query];
+    while ([rs next]) {
+        NSLog(@"%@",[rs stringForColumnIndex:0]);
+    }
+    
+    [db close];
+    
+    return [NSArray array];
 }
 
 @end

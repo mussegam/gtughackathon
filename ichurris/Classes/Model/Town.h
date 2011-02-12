@@ -38,4 +38,6 @@
 - (NSUInteger)getTotalMale;
 - (NSUInteger)getTotalFemale;
 
++ (NSArray *)fetchNearTowns;
+
 @end
