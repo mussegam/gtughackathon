@@ -1,23 +1,22 @@
 //
-//  AgeSelectorViewController.m
+//  MyAgeSelectorViewController.m
 //  ichurris
 //
 //  Created by Albert Hernández López on 12/02/11.
 //  Copyright 2011 __MyCompanyName__. All rights reserved.
 //
 
-#import "AgeSelectorViewController.h"
-#import "Defines.h"
-#import "NationalitySelectorViewController.h"
+#import "MyAgeSelectorViewController.h"
+#import "MySalaryViewController.h"
 #import "NSUserDefaultsManager.h"
 
-@interface  AgeSelectorViewController ( Private )
+@interface MyAgeSelectorViewController ( Private )
 - (void)saveIntoNSUD:(NSNumber*)age;
 @end
 
 #pragma mark -
 
-@implementation AgeSelectorViewController
+@implementation MyAgeSelectorViewController
 
 @synthesize agePicker, selectButton;
 
@@ -35,17 +34,21 @@
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
     [super viewDidLoad];
-	[self.navigationItem setTitle:@"Y, ¿de qué edad buscas?"];
+	[self.navigationItem setTitle:@"¿Y tú edad?"];
 	labels = [[NSArray arrayWithObjects:
-			   @"0-14",@"15-64",@"65-84",@"+85",nil] 
+			   @"0-14",@"15-18",@"19-25",@"26-32",@"33-45",@"46-60",@"61-70",@"71-84",@"+85",nil] 
 			  retain];
 	values = [[NSArray arrayWithObjects:
 			   [NSNumber numberWithInt:0],
 			   [NSNumber numberWithInt:15],
-			   [NSNumber numberWithInt:65],
+			   [NSNumber numberWithInt:19],
+			   [NSNumber numberWithInt:26],
+			   [NSNumber numberWithInt:33],
+			   [NSNumber numberWithInt:46],
+			   [NSNumber numberWithInt:61],
+			   [NSNumber numberWithInt:71],
 			   [NSNumber numberWithInt:85],nil] 
 			  retain];
-	
 }
 
 /*
@@ -82,9 +85,9 @@
 - (IBAction)selectButtonPressed:(id)sender {
 	NSNumber *age = [values objectAtIndex:[agePicker selectedRowInComponent:0]];
 	[self saveIntoNSUD:age];
-	NationalitySelectorViewController *nsvc = [[NationalitySelectorViewController alloc] initWithNibName:@"NationalitySelectorViewController" bundle:nil];
-	[[self navigationController] pushViewController:nsvc animated:YES];
-	[nsvc release];
+	MySalaryViewController *msvc = [[MySalaryViewController alloc] initWithNibName:@"MySalaryViewController" bundle:nil];
+	[[self navigationController] pushViewController:msvc animated:YES];
+	[msvc release];
 }
 
 #pragma mark -
@@ -123,7 +126,7 @@
 #pragma mark Private
 
 - (void)saveIntoNSUD:(NSNumber*)age {
-	[[NSUserDefaultsManager sharedInstance] saveToUserDefaults:age key:kUDDesiredAge];
+	[[NSUserDefaultsManager sharedInstance] saveToUserDefaults:age key:kUDMyAge];
 }
 
 @end

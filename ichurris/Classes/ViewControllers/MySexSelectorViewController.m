@@ -1,39 +1,37 @@
 //
-//  SexSelectorViewController.m
+//  MySexSelectorViewController.m
 //  ichurris
 //
 //  Created by Albert Hernández López on 12/02/11.
 //  Copyright 2011 __MyCompanyName__. All rights reserved.
 //
 
-#import "AgeSelectorViewController.h"
-#import "Defines.h"
+#import "MyAgeSelectorViewController.h"
+#import "MySexSelectorViewController.h"
 #import "NSUserDefaultsManager.h"
-#import "SexSelectorViewController.h"
 
-@interface SexSelectorViewController ( Private )
+@interface MySexSelectorViewController ( Private )
 - (void)saveIntoNSUD:(NSString*)sex;
 @end
 
 #pragma mark -
 
-@implementation SexSelectorViewController
+@implementation MySexSelectorViewController
 
 @synthesize titleLabel;
 @synthesize maleButton;
 @synthesize femaleButton;
 
-
 // The designated initializer.  Override if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
 /*
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization.
-    }
-    return self;
-}
-*/
+ - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
+ self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+ if (self) {
+ // Custom initialization.
+ }
+ return self;
+ }
+ */
 
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
@@ -42,12 +40,12 @@
 }
 
 /*
-// Override to allow orientations other than the default portrait orientation.
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
-    // Return YES for supported orientations.
-    return (interfaceOrientation == UIInterfaceOrientationPortrait);
-}
-*/
+ // Override to allow orientations other than the default portrait orientation.
+ - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
+ // Return YES for supported orientations.
+ return (interfaceOrientation == UIInterfaceOrientationPortrait);
+ }
+ */
 
 - (void)didReceiveMemoryWarning {
     // Releases the view if it doesn't have a superview.
@@ -72,7 +70,7 @@
 
 - (IBAction)maleButtonPressed:(id)sender {
 	[self saveIntoNSUD:@"male"];
-	AgeSelectorViewController *ageSelectorVC = [[AgeSelectorViewController alloc] initWithNibName:@"AgeSelectorViewController"
+	MyAgeSelectorViewController *ageSelectorVC = [[MyAgeSelectorViewController alloc] initWithNibName:@"MyAgeSelectorViewController"
 																						   bundle:nil];
 	[[self navigationController] pushViewController:ageSelectorVC animated:YES];
 	[ageSelectorVC release];
@@ -80,8 +78,8 @@
 
 - (IBAction)femaleButtonPressed:(id)sender {
 	[self saveIntoNSUD:@"female"];
-	AgeSelectorViewController *ageSelectorVC = [[AgeSelectorViewController alloc] initWithNibName:@"AgeSelectorViewController"
-																						bundle:nil];
+	MyAgeSelectorViewController *ageSelectorVC = [[MyAgeSelectorViewController alloc] initWithNibName:@"MyAgeSelectorViewController"
+																						   bundle:nil];
 	[[self navigationController] pushViewController:ageSelectorVC animated:YES];
 	[ageSelectorVC release];
 }
@@ -90,7 +88,7 @@
 #pragma mark Private
 
 - (void)saveIntoNSUD:(NSString*)sex {
-	[[NSUserDefaultsManager sharedInstance] saveToUserDefaults:sex key:kUDDesiredSex];
+	[[NSUserDefaultsManager sharedInstance] saveToUserDefaults:sex key:kUDMySex];
 }
 
 @end

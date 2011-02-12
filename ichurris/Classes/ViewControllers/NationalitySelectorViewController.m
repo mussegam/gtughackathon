@@ -1,28 +1,25 @@
 //
-//  SexSelectorViewController.m
+//  NationalitySelectorViewController.m
 //  ichurris
 //
 //  Created by Albert Hernández López on 12/02/11.
 //  Copyright 2011 __MyCompanyName__. All rights reserved.
 //
 
-#import "AgeSelectorViewController.h"
-#import "Defines.h"
+#import "MySexSelectorViewController.h"
+#import "NationalitySelectorViewController.h"
 #import "NSUserDefaultsManager.h"
-#import "SexSelectorViewController.h"
 
-@interface SexSelectorViewController ( Private )
-- (void)saveIntoNSUD:(NSString*)sex;
+@interface  NationalitySelectorViewController ( Private )
+- (void)saveIntoNSUD:(NSString*)nationality;
 @end
 
 #pragma mark -
 
-@implementation SexSelectorViewController
+@implementation NationalitySelectorViewController
 
-@synthesize titleLabel;
-@synthesize maleButton;
-@synthesize femaleButton;
-
+@synthesize spanishButton;
+@synthesize foreignButton;
 
 // The designated initializer.  Override if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
 /*
@@ -38,7 +35,7 @@
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
     [super viewDidLoad];
-	[self.navigationItem setTitle:@"¿Qué buscas?"];
+	[self.navigationItem setTitle:@"Nacionalidad"];
 }
 
 /*
@@ -67,30 +64,28 @@
     [super dealloc];
 }
 
-#pragma mark -
 #pragma mark Public
 
-- (IBAction)maleButtonPressed:(id)sender {
-	[self saveIntoNSUD:@"male"];
-	AgeSelectorViewController *ageSelectorVC = [[AgeSelectorViewController alloc] initWithNibName:@"AgeSelectorViewController"
-																						   bundle:nil];
-	[[self navigationController] pushViewController:ageSelectorVC animated:YES];
-	[ageSelectorVC release];
+- (IBAction) spanishButtonPressed:(id)sender {
+	[self saveIntoNSUD:@"spanish"];
+	MySexSelectorViewController *masvc = [[MySexSelectorViewController alloc] initWithNibName:@"MySexSelectorViewController" bundle:nil];
+	[[self navigationController] pushViewController:masvc animated:YES];
+	[masvc release];
 }
 
-- (IBAction)femaleButtonPressed:(id)sender {
-	[self saveIntoNSUD:@"female"];
-	AgeSelectorViewController *ageSelectorVC = [[AgeSelectorViewController alloc] initWithNibName:@"AgeSelectorViewController"
-																						bundle:nil];
-	[[self navigationController] pushViewController:ageSelectorVC animated:YES];
-	[ageSelectorVC release];
+- (IBAction) foreignButtonPressed:(id)sender {
+	[self saveIntoNSUD:@"foreign"];
+	MySexSelectorViewController *masvc = [[MySexSelectorViewController alloc] initWithNibName:@"MySexSelectorViewController" bundle:nil];
+	[[self navigationController] pushViewController:masvc animated:YES];
+	[masvc release];
 }
+
 
 #pragma mark -
 #pragma mark Private
 
-- (void)saveIntoNSUD:(NSString*)sex {
-	[[NSUserDefaultsManager sharedInstance] saveToUserDefaults:sex key:kUDDesiredSex];
+- (void)saveIntoNSUD:(NSString*)nationality {
+	[[NSUserDefaultsManager sharedInstance] saveToUserDefaults:nationality key:kUDDesiredNationality];
 }
 
 @end
