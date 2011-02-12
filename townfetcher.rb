@@ -17,11 +17,18 @@ class Town
 	def to_s
 	  "#{@name} Lat:#{@lat} -- Lon:#{@lon}"
   end
+  
+  def to_insert
+    "insert into towns values(\"#{@name}\", #{@lat}, #{@lon}, #{@home0}, #{@home1}, #{@home2}, #{@home3}, #{@home4}, #{@dona0}, #{@dona1}, #{@dona2}, #{@dona3}, #{@dona4})"
+  end
 
 end
 
 def fetch_towns_of_catalonia
   towns = Array.new
+
+  db = SQLite3::Database.new("towns.db")
+  db.execute("create table towns(name varchar(100), lat float, lon float, home0 int, home1 int, home2 int, home3 int, hometotal int, dona0 int, dona1 int, dona2 int, dona3 int, donatotal int)")
   
   a = Mechanize.new { |agent|
       agent.user_agent_alias = 'Mac Safari' # Wikipedia blocks if not
@@ -101,33 +108,33 @@ def fetch_towns_of_catalonia
           value = elem["v"].split(',').first
           
           if (id == "f328") then
-            town.lon = value
+            town.lon = value.to_f
           elsif (id == "f329")
-            town.lat = value
+            town.lat = value.to_f
           elsif (id == "f176")
-            town.home0 = value
+            town.home0 = value.to_i
           elsif (id == "f33")
-            town.home1 = value
+            town.home1 = value.to_i
           elsif (id == "f34")
-            town.home2 = value
+            town.home2 = value.to_i
           elsif (id == "f35")
-            town.home3 = value
+            town.home3 = value.to_i
           elsif (id == "f36")
-            town.home4 = value
+            town.home4 = value.to_i
           elsif (id == "f38")
-            town.dona0 = value
+            town.dona0 = value.to_i
           elsif (id == "f39")
-            town.dona1 = value
+            town.dona1 = value.to_i
           elsif (id == "f40")
-            town.dona2 = value
+            town.dona2 = value.to_i
           elsif (id == "f41")
-            town.dona3 = value
+            town.dona3 = value.to_i
           elsif (id == "f42")
-            town.dona4 = value
+            town.dona4 = value.to_i
           end
         end
-        puts "#{town}"
-        towns.insert(-1,town)
+        puts town.to_insert
+        db.execute(town.to_insert)
       end
     end
   end
