@@ -161,6 +161,12 @@
 			D4D2E1001306F06E00F9A62A /* PBXTextBookmark */ = D4D2E1001306F06E00F9A62A /* PBXTextBookmark */;
 			D4D2E1011306F06E00F9A62A /* PBXTextBookmark */ = D4D2E1011306F06E00F9A62A /* PBXTextBookmark */;
 			D4D2E1021306F06E00F9A62A /* PBXTextBookmark */ = D4D2E1021306F06E00F9A62A /* PBXTextBookmark */;
+			D4D2E10B1306F2F100F9A62A /* PBXTextBookmark */ = D4D2E10B1306F2F100F9A62A /* PBXTextBookmark */;
+			D4D2E10C1306F2F100F9A62A /* PBXTextBookmark */ = D4D2E10C1306F2F100F9A62A /* PBXTextBookmark */;
+			D4D2E10D1306F2F100F9A62A /* PBXTextBookmark */ = D4D2E10D1306F2F100F9A62A /* PBXTextBookmark */;
+			D4D2E10E1306F2F100F9A62A /* PBXTextBookmark */ = D4D2E10E1306F2F100F9A62A /* PBXTextBookmark */;
+			D4D2E10F1306F2F100F9A62A /* PBXTextBookmark */ = D4D2E10F1306F2F100F9A62A /* PBXTextBookmark */;
+			D4D2E1101306F2F100F9A62A /* PBXTextBookmark */ = D4D2E1101306F2F100F9A62A /* PBXTextBookmark */;
 		};
 		sourceControlManager = D4D2DC7C1306A30100F9A62A /* Source Control */;
 		userBuildSettings = {
@@ -510,9 +516,9 @@
 	};
 	D4D2DF251306D1B900F9A62A /* TownViewController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1379, 1573}}";
-			sepNavSelRange = "{3176, 0}";
-			sepNavVisRange = "{1854, 513}";
+			sepNavIntBoundsRect = "{{0, 0}, {1139, 1547}}";
+			sepNavSelRange = "{2098, 66}";
+			sepNavVisRange = "{1675, 849}";
 			sepNavWindowFrame = "{{61, 273}, {750, 558}}";
 		};
 	};
