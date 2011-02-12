@@ -17,10 +17,12 @@
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    [self.navigationItem setTitle:@"ChurriMap"];
+	
     ichurrisAppDelegate *dele = [[UIApplication sharedApplication] delegate];
     self.towns = [dele nearTowns];
-    [mapaView setCenterCoordinate:[dele bestLocation].coordinate];
+    //[mapaView setCenterCoordinate:[dele bestLocation].coordinate];
+	[mapaView setRegion:MKCoordinateRegionMakeWithDistance([dele bestLocation].coordinate, 1000, 1000)];
 }
 
 /*
