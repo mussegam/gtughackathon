@@ -21,8 +21,12 @@
 	
     ichurrisAppDelegate *dele = [[UIApplication sharedApplication] delegate];
     self.towns = [dele nearTowns];
-    //[mapaView setCenterCoordinate:[dele bestLocation].coordinate];
-	[mapaView setRegion:MKCoordinateRegionMakeWithDistance([dele bestLocation].coordinate, 1000, 1000)];
+	[mapaView setRegion:MKCoordinateRegionMakeWithDistance([dele bestLocation].coordinate, 25000, 25000)];
+    
+    for (Town *town in towns) {
+        MKCircle *circle = [MKCircle circleWithCenterCoordinate:CLLocationCoordinate2DMake(town.lat, town.lon) radius:[town getGetCachoProbability]+10];
+        [mapaView addOverlay:circle];
+    }
 }
 
 /*
