@@ -119,6 +119,8 @@
     
     outArray = [outArray sortedArrayUsingDescriptors:sortDescriptors];
     
+    NSLog(@"Towns: %d",[outArray count]);
+    
     [results release];
     return outArray;
 }
