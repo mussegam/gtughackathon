@@ -285,7 +285,7 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>46</integer>
+									<integer>39</integer>
 									<integer>19</integer>
 									<integer>11</integer>
 									<integer>0</integer>
@@ -339,7 +339,7 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>D4D2E20D1307089F00F9A62A</string>
+										<string>D4D2E21D13070B0700F9A62A</string>
 										<key>history</key>
 										<array>
 											<string>D4D2DD161306AAA600F9A62A</string>
@@ -392,18 +392,18 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 0}, {1073, 382}}</string>
+								<string>{{0, 0}, {1073, 372}}</string>
 								<key>RubberWindowFrame</key>
 								<string>0 127 1440 751 0 0 1440 878 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
 							<key>Proportion</key>
-							<string>382pt</string>
+							<string>372pt</string>
 						</dict>
 						<dict>
 							<key>Proportion</key>
-							<string>323pt</string>
+							<string>333pt</string>
 							<key>Tabs</key>
 							<array>
 								<dict>
@@ -417,7 +417,9 @@
 									<key>GeometryConfiguration</key>
 									<dict>
 										<key>Frame</key>
-										<string>{{10, 27}, {1073, 230}}</string>
+										<string>{{10, 27}, {1073, 306}}</string>
+										<key>RubberWindowFrame</key>
+										<string>0 127 1440 751 0 0 1440 878 </string>
 									</dict>
 									<key>Module</key>
 									<string>XCDetailModule</string>
@@ -434,8 +436,6 @@
 									<dict>
 										<key>Frame</key>
 										<string>{{10, 27}, {1073, 296}}</string>
-										<key>RubberWindowFrame</key>
-										<string>0 127 1440 751 0 0 1440 878 </string>
 									</dict>
 									<key>Module</key>
 									<string>PBXProjectFindModule</string>
@@ -501,11 +501,11 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>D4D2E11A1306F4BB00F9A62A</string>
+				<string>D4D2E21813070AD300F9A62A</string>
 				<string>1CA23ED40692098700951B8B</string>
-				<string>D4D2E11B1306F4BB00F9A62A</string>
+				<string>D4D2E21913070AD300F9A62A</string>
 				<string>D4D2DC761306A30100F9A62A</string>
-				<string>D4D2E11C1306F4BB00F9A62A</string>
+				<string>D4D2E21A13070AD300F9A62A</string>
 				<string>1CA23EDF0692099D00951B8B</string>
 				<string>1CA23EE00692099D00951B8B</string>
 				<string>1CA23EE10692099D00951B8B</string>
@@ -655,14 +655,14 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>D4D2E16F1307013000F9A62A</string>
+				<string>D4D2E21E13070B0700F9A62A</string>
 				<string>1CCC7628064C1048000F2A68</string>
 				<string>1CCC7629064C1048000F2A68</string>
-				<string>D4D2E1701307013000F9A62A</string>
-				<string>D4D2E1711307013000F9A62A</string>
-				<string>D4D2E1721307013000F9A62A</string>
-				<string>D4D2E1731307013000F9A62A</string>
-				<string>D4D2DC761306A30100F9A62A</string>
+				<string>D4D2E21F13070B0700F9A62A</string>
+				<string>D4D2E22013070B0700F9A62A</string>
+				<string>D4D2E22113070B0700F9A62A</string>
+				<string>D4D2E22213070B0700F9A62A</string>
+				<string>D4D2E22313070B0700F9A62A</string>
 			</array>
 			<key>ToolbarConfigUserDefaultsMinorVersion</key>
 			<string>2</string>
@@ -696,8 +696,6 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>D4D2E185130702CF00F9A62A</string>
-		<string>D4D2E17A130702A100F9A62A</string>
 		<string>/Users/ahernandez/Desktop/hackathon/ichurris/gtughackathon/ichurris/ichurris.xcodeproj</string>
 	</array>
 	<key>WindowString</key>

@@ -67,6 +67,9 @@
 		D4D2E0D01306EC6800F9A62A /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4D2E0CF1306EC6800F9A62A /* CoreLocation.framework */; };
 		D4D2E0E51306ECEB00F9A62A /* MyCLController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4D2E0E41306ECEB00F9A62A /* MyCLController.m */; };
 		E30CA3061306F3B900E60C2C /* towns.db in Resources */ = {isa = PBXBuildFile; fileRef = E30CA3051306F3B900E60C2C /* towns.db */; };
+		E30CA41E1307066E00E60C2C /* TotalMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E30CA41C1307066E00E60C2C /* TotalMapViewController.m */; };
+		E30CA41F1307066E00E60C2C /* TotalMapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E30CA41D1307066E00E60C2C /* TotalMapViewController.xib */; };
+		E30CA4211307068200E60C2C /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E30CA4201307068200E60C2C /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -173,6 +176,10 @@
 		D4D2E0E31306ECEB00F9A62A /* MyCLController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCLController.h; sourceTree = "<group>"; };
 		D4D2E0E41306ECEB00F9A62A /* MyCLController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyCLController.m; sourceTree = "<group>"; };
 		E30CA3051306F3B900E60C2C /* towns.db */ = {isa = PBXFileReference; lastKnownFileType = file; name = towns.db; path = ../towns.db; sourceTree = SOURCE_ROOT; };
+		E30CA41B1307066E00E60C2C /* TotalMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TotalMapViewController.h; sourceTree = "<group>"; };
+		E30CA41C1307066E00E60C2C /* TotalMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TotalMapViewController.m; sourceTree = "<group>"; };
+		E30CA41D1307066E00E60C2C /* TotalMapViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TotalMapViewController.xib; sourceTree = "<group>"; };
+		E30CA4201307068200E60C2C /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -190,6 +197,7 @@
 				D4D2DEEE1306C8FF00F9A62A /* libsqlite3.dylib in Frameworks */,
 				D4D2E0431306E01B00F9A62A /* QuartzCore.framework in Frameworks */,
 				D4D2E0D01306EC6800F9A62A /* CoreLocation.framework in Frameworks */,
+				E30CA4211307068200E60C2C /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +268,7 @@
 				D4D2DEED1306C8FF00F9A62A /* libsqlite3.dylib */,
 				D4D2E0CF1306EC6800F9A62A /* CoreLocation.framework */,
 				D4D2E0421306E01B00F9A62A /* QuartzCore.framework */,
+				E30CA4201307068200E60C2C /* MapKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -387,6 +396,9 @@
 				D4D2E08B1306E28000F9A62A /* ResultsViewController.h */,
 				D4D2E08C1306E28000F9A62A /* ResultsViewController.m */,
 				D4D2E08D1306E28000F9A62A /* ResultsViewController.xib */,
+				E30CA41B1307066E00E60C2C /* TotalMapViewController.h */,
+				E30CA41C1307066E00E60C2C /* TotalMapViewController.m */,
+				E30CA41D1307066E00E60C2C /* TotalMapViewController.xib */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -531,6 +543,7 @@
 				D4D2DFCB1306DAA200F9A62A /* house.jpg in Resources */,
 				D4D2E08F1306E28000F9A62A /* ResultsViewController.xib in Resources */,
 				E30CA3061306F3B900E60C2C /* towns.db in Resources */,
+				E30CA41F1307066E00E60C2C /* TotalMapViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -576,6 +589,7 @@
 				D4D2E08E1306E28000F9A62A /* ResultsViewController.m in Sources */,
 				D4D2E0C41306E59700F9A62A /* Town.m in Sources */,
 				D4D2E0E51306ECEB00F9A62A /* MyCLController.m in Sources */,
+				E30CA41E1307066E00E60C2C /* TotalMapViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

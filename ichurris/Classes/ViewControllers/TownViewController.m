@@ -15,6 +15,7 @@
 #import "ResultsViewController.h"
 #import "ichurrisAppDelegate.h"
 #import "Town.h"
+#import "TotalMapViewController.h"
 
 @implementation TownViewController
 
@@ -69,24 +70,29 @@
 #pragma mark UITableViewDelegate
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-	ResultsViewController *rvc = [[ResultsViewController alloc] initWithNibName:@"ResultsViewController" bundle:nil];
-	Town *town = (Town*)[towns objectAtIndex:indexPath.row];
-	NSUInteger kk = [town getGetCachoProbability];
-	[[self navigationController] pushViewController:rvc animated:YES];
-	rvc.resultLabel.text = [NSString stringWithFormat:@"%d/100",[town getGetCachoProbability]];
-	[rvc release];
+    if (indexPath.row != 0) {
+		Town *town = (Town*)[towns objectAtIndex:indexPath.row];
+		NSUInteger kk = [town getGetCachoProbability];
+        ResultsViewController *rvc = [[ResultsViewController alloc] initWithNibName:@"ResultsViewController" bundle:nil];
+        [[self navigationController] pushViewController:rvc animated:YES];
+		rvc.resultLabel.text = [NSString stringWithFormat:@"%d/100",[town getGetCachoProbability]];
+        [rvc release];
+    } else {
+        TotalMapViewController *map = [[TotalMapViewController alloc] initWithNibName:@"TotalMapViewController" bundle:nil];
+        [[self navigationController] pushViewController:map animated:YES];
+        [map release];
+    }
 }
 
 #pragma mark UITableViewDataSource
 
 - (NSInteger)tableView:(UITableView *)aTableView numberOfRowsInSection:(NSInteger)section {
 	if (section > 0) return 0;
-	return [towns count];
+	return [towns count] + 1;
 }
 
 
 - (UITableViewCell *)tableView:(UITableView *)aTableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-
 	
 	static NSString *cellIdentifier = @"TownCell";
     
@@ -99,20 +105,26 @@
 		[ctl release];
 	}
     
-	// Cell setup...
-    NSURL *url = [NSURL URLWithString:@"http://www.google.es/images/nav_logo36.png"];
-	
-	__block ASIHTTPRequest *request = [[ASIHTTPRequest alloc] initWithURL:url];
-	[request setDelegate:self];
-	[request setCompletionBlock:^{
-		NSData *imageData = [request responseData];
-		[cell.thumbnailImage setImage:[UIImage imageWithData:imageData]];
-	}];
-	[request startAsynchronous];
-    
-    Town *town = [towns objectAtIndex:indexPath.row];
-    
-	cell.townName.text = town.name;
+    if (indexPath.row == 0) {
+        
+        cell.townName.text = @"Mostrar todos";
+        
+    } else {
+        // Cell setup...
+        NSURL *url = [NSURL URLWithString:@"http://www.google.es/images/nav_logo36.png"];
+        
+        __block ASIHTTPRequest *request = [[ASIHTTPRequest alloc] initWithURL:url];
+        [request setDelegate:self];
+        [request setCompletionBlock:^{
+            NSData *imageData = [request responseData];
+            [cell.thumbnailImage setImage:[UIImage imageWithData:imageData]];
+        }];
+        [request startAsynchronous];
+        
+        Town *town = [towns objectAtIndex:indexPath.row];
+        
+        cell.townName.text = town.name;
+    }
 	
 	return cell;
 }
