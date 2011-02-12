@@ -9,12 +9,13 @@
 #import "MyCLController.h"
 #import "Town.h"
 #import "FMDatabase.h"
+#import "NSUserDefaultsManager.h"
 
 @implementation Town
 
 @synthesize name, lat, lon, distance;
 @synthesize male0a14, male15a64, male65a84, male85;
-@synthesize female0a14, female15a64, female65a84, female85;	
+@synthesize female0a14, female15a64, female65a84, female85, total;	
 
 - (id) init {
 	self = [super init];
@@ -31,6 +32,7 @@
 		female65a84 = 0;
 		female85 = 0;
         distance = 100;
+		total = 0;
 	}
 	return self;
 }
@@ -115,6 +117,88 @@
     
     [results release];
     return outArray;
+}
+
+- (NSUInteger)getGetCachoProbability {
+	NSString *desiredSex = [[NSUserDefaultsManager sharedInstance] retrieveFromUserDefaults:kUDDesiredSex];
+	NSNumber *desiredAge = [[NSUserDefaultsManager sharedInstance] retrieveFromUserDefaults:kUDDesiredAge];
+	NSString *desiredNat = [[NSUserDefaultsManager sharedInstance] retrieveFromUserDefaults:kUDDesiredNationality];
+	NSString *mySex		 = [[NSUserDefaultsManager sharedInstance] retrieveFromUserDefaults:kUDMySex];
+	NSNumber *myAge		 = [[NSUserDefaultsManager sharedInstance] retrieveFromUserDefaults:kUDMyAge];
+	NSNumber *mySalary	 = [[NSUserDefaultsManager sharedInstance] retrieveFromUserDefaults:kUDMySalary];
+	
+	NSArray *salaries = [NSArray arrayWithObjects:
+						 [NSNumber numberWithInt:0],
+						 [NSNumber numberWithInt:12000],
+						 [NSNumber numberWithInt:18000],
+						 [NSNumber numberWithInt:25000],
+						 [NSNumber numberWithInt:36000],
+						 [NSNumber numberWithInt:50000],
+						 [NSNumber numberWithInt:100000],
+						 [NSNumber numberWithInt:250000],nil];
+	
+	NSArray *salariesMapPoints = [NSArray arrayWithObjects:
+								  [NSNumber numberWithFloat:4],
+								  [NSNumber numberWithFloat:5],
+								  [NSNumber numberWithFloat:6],
+								  [NSNumber numberWithFloat:7],
+								  [NSNumber numberWithFloat:8],
+								  [NSNumber numberWithFloat:9],
+								  [NSNumber numberWithFloat:9.5],
+								  [NSNumber numberWithFloat:10],nil];
+	
+	NSUInteger salaryIdx = [salaries indexOfObject:mySalary];
+	float salaryPoints = [[salariesMapPoints objectAtIndex:salaryIdx] floatValue];	// 4-10 points
+
+	
+	NSArray *ages = [NSArray arrayWithObjects:
+					 [NSNumber numberWithInt:0],
+					 [NSNumber numberWithInt:15],
+					 [NSNumber numberWithInt:19],
+					 [NSNumber numberWithInt:26],
+					 [NSNumber numberWithInt:33],
+					 [NSNumber numberWithInt:46],
+					 [NSNumber numberWithInt:61],
+					 [NSNumber numberWithInt:71],
+					 [NSNumber numberWithInt:85],nil];
+	
+	NSArray *agesMapAmount;
+	if (desiredSex && [desiredSex isEqualToString:@"female"]) {
+		agesMapAmount = [NSArray arrayWithObjects:
+						 [NSNumber numberWithUnsignedInt:female0a14],
+						 [NSNumber numberWithUnsignedInt:female0a14],
+						 [NSNumber numberWithUnsignedInt:female15a64],
+						 [NSNumber numberWithUnsignedInt:female15a64],
+						 [NSNumber numberWithUnsignedInt:female15a64],
+						 [NSNumber numberWithUnsignedInt:female15a64],
+						 [NSNumber numberWithUnsignedInt:female65a84],
+						 [NSNumber numberWithUnsignedInt:female65a84],
+						 [NSNumber numberWithUnsignedInt:female85],nil];
+	}
+	else {
+		agesMapAmount = [NSArray arrayWithObjects:
+						 [NSNumber numberWithUnsignedInt:male0a14],
+						 [NSNumber numberWithUnsignedInt:male0a14],
+						 [NSNumber numberWithUnsignedInt:male15a64],
+						 [NSNumber numberWithUnsignedInt:male15a64],
+						 [NSNumber numberWithUnsignedInt:male15a64],
+						 [NSNumber numberWithUnsignedInt:male15a64],
+						 [NSNumber numberWithUnsignedInt:male65a84],
+						 [NSNumber numberWithUnsignedInt:male65a84],
+						 [NSNumber numberWithUnsignedInt:male85],nil];
+	}
+
+	NSUInteger ageIdx = [ages indexOfObject:myAge];
+	NSNumber *numberPeople = [agesMapAmount objectAtIndex:ageIdx];
+	
+	float agePoints = ((float)[numberPeople intValue]*10)/total;
+	
+	float results = salaryPoints*agePoints;
+
+	if (mySex == desiredSex) results =- 10;	// Homesexuality penalty
+	results -= [desiredAge intValue] - [myAge intValue] / 2;	// Asaltacunas bonus/malus
+	
+	return (NSUInteger)results;
 }
 
 @end
