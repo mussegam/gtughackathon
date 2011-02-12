@@ -1,5 +1,5 @@
 //
-//  AgeSelectorViewController.h
+//  MyAgeSelectorViewController.h
 //  ichurris
 //
 //  Created by Albert Hernández López on 12/02/11.
@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 
 
-@interface AgeSelectorViewController : UIViewController <UIPickerViewDelegate, UIPickerViewDataSource> {
+@interface MyAgeSelectorViewController : UIViewController <UIPickerViewDelegate, UIPickerViewDataSource> {
 	UIPickerView *agePicker;
 	UIButton *selectButton;
 	
