@@ -11,6 +11,7 @@
 #import "FMDatabaseAdditions.h"
 #import "MySalaryViewController.h"
 #import "NSUserDefaultsManager.h"
+#import "TownViewController.h"
 
 @interface  MySalaryViewController ( Private )
 - (void)saveIntoNSUD:(NSNumber*)salary;
@@ -87,9 +88,9 @@
 	NSNumber *salary = [values objectAtIndex:[salaryPicker selectedRowInComponent:0]];
 	[self saveIntoNSUD:salary];
 
-	/*NationalitySelectorViewController *nsvc = [[NationalitySelectorViewController alloc] initWithNibName:@"NationalitySelectorViewController" bundle:nil];
-	 [[self navigationController] pushViewController:nsvc animated:YES];
-	 [nsvc release];*/
+	TownViewController *tvc = [[TownViewController alloc] initWithNibName:@"TownViewController" bundle:nil];
+	[[self navigationController] pushViewController:tvc animated:YES];
+	[tvc release];
 }
 
 #pragma mark -
