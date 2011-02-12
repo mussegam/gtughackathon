@@ -10,13 +10,12 @@
 #import "SexSelectorViewController.h"
 #import "Town.h"
 #import "Defines.h"
-#import "MyCLController.h"
 
 @implementation ichurrisAppDelegate
 
 @synthesize window;
 @synthesize navigationController;
-@synthesize nearTowns;
+@synthesize nearTowns, bestLocation;
 
 #pragma mark -
 #pragma mark Application lifecycle
@@ -85,6 +84,8 @@
 - (void)dealloc {
 	[navigationController release];
 	[window release];
+    [nearTowns release];
+    [bestLocation release];
 	[super dealloc];
 }
 
@@ -98,10 +99,12 @@
 
 - (void) didFinishUpdatingLocation:(CLLocation*)res {
     self.nearTowns = [Town fetchNearTowns];
+    self.bestLocation = res;
 }
 
 - (void) didUpdateLocation:(CLLocation*)res {
     self.nearTowns = [Town fetchNearTowns];
+    self.bestLocation = res;
 }
 
 

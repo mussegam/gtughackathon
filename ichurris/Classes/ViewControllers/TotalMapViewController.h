@@ -7,10 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import <MapKit/MapKit.h>
 
 @interface TotalMapViewController : UIViewController {
-    
+    MKMapView *mapaView;
+    NSArray *towns;
 }
+
+@property (nonatomic, retain) IBOutlet MKMapView *mapaView;
+@property (nonatomic, retain) NSArray *towns;
 
 @end

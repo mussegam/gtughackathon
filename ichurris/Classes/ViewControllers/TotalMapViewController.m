@@ -7,27 +7,21 @@
 //
 
 #import "TotalMapViewController.h"
-
+#import "ichurrisAppDelegate.h"
+#import "Town.h"
 
 @implementation TotalMapViewController
 
-// The designated initializer.  Override if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
-/*
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization.
-    }
-    return self;
-}
-*/
+@synthesize mapaView,towns;
 
-/*
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    ichurrisAppDelegate *dele = [[UIApplication sharedApplication] delegate];
+    self.towns = [dele nearTowns];
+    [mapaView setCenterCoordinate:[dele bestLocation].coordinate];
 }
-*/
 
 /*
 // Override to allow orientations other than the default portrait orientation.
@@ -52,6 +46,8 @@
 
 
 - (void)dealloc {
+    [mapaView release];
+    [towns release];
     [super dealloc];
 }
 

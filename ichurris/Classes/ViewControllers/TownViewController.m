@@ -14,6 +14,7 @@
 #import "ResultsViewController.h"
 #import "ichurrisAppDelegate.h"
 #import "Town.h"
+#import "TotalMapViewController.h"
 
 @implementation TownViewController
 
@@ -74,7 +75,9 @@
         [[self navigationController] pushViewController:rvc animated:YES];
         [rvc release];
     } else {
-        
+        TotalMapViewController *map = [[TotalMapViewController alloc] initWithNibName:@"TotalMapViewController" bundle:nil];
+        [[self navigationController] pushViewController:map animated:YES];
+        [map release];
     }
 }
 

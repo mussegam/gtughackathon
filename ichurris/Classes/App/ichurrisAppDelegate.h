@@ -7,17 +7,19 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MyCLController.h"
 
 @interface ichurrisAppDelegate : NSObject <UIApplicationDelegate> {
     
     UIWindow *window;
     UINavigationController *navigationController;
     NSArray *nearTowns;
+    CLLocation *bestLocation;
 }
 
 @property (nonatomic, retain) IBOutlet UIWindow *window;
 @property (nonatomic, retain) IBOutlet UINavigationController *navigationController;
 @property (nonatomic, retain) NSArray *nearTowns;
+@property (nonatomic, retain) CLLocation *bestLocation;
 
 @end
-
