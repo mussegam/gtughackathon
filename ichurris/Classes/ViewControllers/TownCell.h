@@ -7,7 +7,6 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "MVYImageView.h"
 
 @interface TownCell : UITableViewCell {
 	UIImageView *thumbnailImage;
